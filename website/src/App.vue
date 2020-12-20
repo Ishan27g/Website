@@ -1,16 +1,14 @@
 <template>
-
+<div class="p-d-flex" id="website">
   <div class="p-grid p-jc-between" id="bar">
-    <div class="p-col-1 p-text-left" v-tooltip.bottom="'Home'">
+    <div class="p-col-1" v-tooltip.bottom="'Home'">
       <router-link to="/">
         <i class="pi pi-home" style="fontSize: 1em;"></i>
       </router-link>
     </div>
+      <router-view id="content"> </router-view>
   </div>
-    
-  <div>
-    <router-view> </router-view>
-  </div>
+</div>
 </template>
 
 <script>
@@ -27,11 +25,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top:60px;
   padding:5%;
   background-Color:rgba(248, 248, 248, 0.842);
+}
+#website {
+  margin-left:5%;
+  margin-right:5%;
+  margin-top:60px;
+}
+#content {
+  margin-left: 10px;
 }
 #bar {
   font-size: 40px;
