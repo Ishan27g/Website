@@ -1,32 +1,24 @@
 <template>
-<div>
-  <div class="p-grid p-jc-between">
-    <div class="p-col-8">
-      <div class="box">
-        <router-link to="/">
-          <div class="p-text-left" id="ishan">
-            <span>
-               <i class="pi pi-home" style="fontSize: 2rem"></i>
-            </span>
-            <span>
-              Ishan Goyal
-            </span>
-            </div>
-        </router-link>
-      </div>
-    </div>
-    <div class="p-col-3">
-      <div class="box" id="contact" >
-            <router-link to="/about" class="p-ml-auto">
-              Contact
-            </router-link>
-      </div>
+
+  <div class="p-grid p-jc-between" id="bar">
+    <div class="p-col-1 p-text-left" v-tooltip.bottom="'Home'">
+      <router-link to="/">
+        <i class="pi pi-home" style="fontSize: 1em;"></i>
+      </router-link>
     </div>
   </div>
-  <router-view> </router-view>
-</div>
+    
+  <div>
+    <router-view> </router-view>
+  </div>
 </template>
 
+<script>
+
+export default {
+  name: 'App',
+}
+</script>
 
 <style>
 #app {
@@ -35,7 +27,14 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 10%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:60px;
+  padding:5%;
+  background-Color:rgba(248, 248, 248, 0.842);
+}
+#bar {
+  font-size: 40px;
 }
 a {
     text-decoration: none;
@@ -44,7 +43,7 @@ a {
   padding: 30px;
   font-weight: bold;
   color: #2c3e50;
-  
+  margin-top: 30px;
 }
 
 #nav a.router-link-exact-active {
@@ -52,16 +51,11 @@ a {
   color: #42b983;
 }
 
-#ishan {
-  font-size: 50px;
-  color: #494141;
-}
-
 #contact {
   position: relative;
   margin-top: 35px;
   font-size: 20px;
   color: #071277;
-
 }
+
 </style>
