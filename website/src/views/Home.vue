@@ -1,5 +1,5 @@
 <template>
-    <div>
+  <div>
     <div class="p-grid p-jc-between" id="ishan">
       <div class="p-col-3 p-text-left" >
         <div class="box">Ishan Goyal</div>
@@ -35,7 +35,7 @@
                   <router-link to="/work">
                     <div class="p-text-centre">Work Experience</div>
                   </router-link>
-                  <router-link to="/">
+                  <router-link to="/uni">
                     <div class="p-text-centre">University Projects</div>
                   </router-link>
                   <router-link to="/">
@@ -46,12 +46,11 @@
                   </router-link>
               </template>
           </Card>
+        </div>
       </div>
     </div>
+    <router-view> </router-view>
   </div>
-      </div>
-
-  <router-view> </router-view>
 </template>
 <script>
 
@@ -73,7 +72,7 @@ export default {
 
 <style >
   #bioInfo {
-    margin-top: 140px;
+    margin-top: 100px;
     font-size: 26px;
 
   }
@@ -85,7 +84,7 @@ export default {
   }
   #ishan {
     position: relative;
-    margin-top: 150px;
+    margin-top: 80px;
     font-size: 50px;
     color: #494141;
   }

@@ -12,6 +12,7 @@ import AvatarGroup from 'primevue/avatargroup';
 import Tooltip from 'primevue/tooltip';
 import Dialog from 'primevue/dialog';
 import Timeline from 'primevue/timeline';
+import Particles from "particles.vue3";
 
 
 
@@ -25,11 +26,12 @@ import 'primeicons/primeicons.css'
 const app = createApp(App);
 
 app.use(Router)
-app.use(PrimeVue), {ripple: true};
+app.use(PrimeVue), {ripple: true}
+app.use(Particles)
 
-app.component('Button', Button);
-app.component('Card', Card);
-app.component('Sidebar', Sidebar);
+app.component('Button', Button)
+app.component('Card', Card)
+app.component('Sidebar', Sidebar)
 app.component('Avatar', Avatar)
 app.component('AvatarGroup', AvatarGroup)
 app.component('Dialog', Dialog)

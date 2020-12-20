@@ -17,7 +17,6 @@
                 <div class="p-text-center p-col-3">
                     <Card style="width: auto;" id="tech">
                         <template #content>
-                            <img src=""/>
                             <Avatar image="https://img.icons8.com/color/96/000000/c-programming.png" size="large" shape="circle" v-tooltip.bottom="'C Programming'"/>
                             <Avatar image="https://img.icons8.com/dusk/64/000000/linux.png" size="large" shape="circle" v-tooltip.bottom="'Linux'"/>
                             <Avatar image="https://img.icons8.com/ios-filled/100/000000/git.png" size="large" shape="circle" v-tooltip.bottom="'Git'" />
@@ -103,6 +102,7 @@ export default {
 <style >
     #experience {
         font-size: 20px;
+        color: #000000;
     }
     #tech{
         position: relative;
