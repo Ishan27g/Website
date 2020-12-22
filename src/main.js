@@ -13,7 +13,9 @@ import Tooltip from 'primevue/tooltip';
 import Dialog from 'primevue/dialog';
 import Timeline from 'primevue/timeline';
 import Particles from "particles.vue3";
-
+import Fieldset from 'primevue/fieldset';
+import Accordion from 'primevue/accordion';
+import AccordionTab from 'primevue/accordiontab';
 
 
 import 'primeflex/primeflex.css'
@@ -35,6 +37,9 @@ app.component('Avatar', Avatar)
 app.component('AvatarGroup', AvatarGroup)
 app.component('Dialog', Dialog)
 app.component('Timeline', Timeline)
+app.component('Fieldset', Fieldset)
+app.component('Accordion', Accordion)
+app.component('AccordionTab', AccordionTab)
 
 
 app.directive('tooltip', Tooltip)
