@@ -1,0 +1,34 @@
+{
+    "data":[
+        {
+            "itemImageSrc": "images/photos/customize.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Profile Settings"
+        }  ,
+        {
+            "itemImageSrc": "images/photos/Server.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Profile Settings"
+        }  ,
+        {
+            "itemImageSrc": "images/photos/documentPreview.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Document Preview Mode"
+        },
+        {
+            "itemImageSrc": "images/photos/genTimeline.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Timeline"
+        },
+        {
+            "itemImageSrc": "images/photos/profile.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Profile Settings"
+        }  
+    ]
+}

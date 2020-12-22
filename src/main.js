@@ -13,8 +13,8 @@ import Tooltip from 'primevue/tooltip';
 import Dialog from 'primevue/dialog';
 import Timeline from 'primevue/timeline';
 import Particles from "particles.vue3";
-
-
+import Fieldset from 'primevue/fieldset';
+import Galleria from 'primevue/galleria';
 
 
 import 'primeflex/primeflex.css'
@@ -36,6 +36,8 @@ app.component('Avatar', Avatar)
 app.component('AvatarGroup', AvatarGroup)
 app.component('Dialog', Dialog)
 app.component('Timeline', Timeline)
+app.component('Fieldset', Fieldset)
+app.component('Galleria', Galleria)
 
 
 app.directive('tooltip', Tooltip)
