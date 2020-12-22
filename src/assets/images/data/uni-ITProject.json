@@ -1,0 +1,34 @@
+{
+    "data":[
+        {
+            "itemImageSrc": "images/photos/customize.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Customise homepage"
+        }  ,
+        {
+            "itemImageSrc": "images/photos/eportfolio-V5.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Architecture"
+        }  ,
+        {
+            "itemImageSrc": "images/photos/documentPreview.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Document Preview Mode"
+        },
+        {
+            "itemImageSrc": "images/photos/genTimeline.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Timeline"
+        },
+        {
+            "itemImageSrc": "images/photos/profile.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Profile Settings"
+        }  
+    ]
+}

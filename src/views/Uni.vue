@@ -12,12 +12,34 @@
         >
       </div>
       <div class="p-col-2">
+        <Galleria
+          :value="imagesITP"
+          :responsiveOptions="responsiveOptions"
+          :numVisible="1"
+          containerStyle="max-width: 80%"
+          :circular="true"
+          :fullScreen="true"
+          :showItemNavigators="true"
+          :showThumbnails="false"
+          v-model:visible="displayITP"
+        >
+          <template #item="slotProps">
+            <img :src="slotProps.item.itemImageSrc" class="zoom" style="width: 90%;"  :alt="slotProps.item.alt" />
+          </template>
+          <template #thumbnail="slotProps">
+            <img
+              :src="slotProps.item.thumbnailImageSrc"
+              :alt="slotProps.item.alt"
+            />
+            {{ slotProps.item.thumbnailImageSrc }}
+          </template>
+        </Galleria>
         <Button
           class="p-button-outlined p-button-raised"
-          @click="visibleFull = true"
-          >View Images</Button
-        >
-      
+          label="Images"
+          icon="pi pi-external-link"
+          @click="displayITP = true"
+        />
       </div>
     </div>
     <div class="p-grid p-jc-center">
@@ -68,17 +90,37 @@
       A mobile application that acts as a platform for public concesus of
       political processes by involving MP's with citizens.
     </p>
-    <Galleria :value="images" :responsiveOptions="responsiveOptions" :numVisible="1" containerStyle="max-width: 850px"
-          :circular="true" :fullScreen="true" :showItemNavigators="true" :showThumbnails="false" v-model:visible="displayBasic">
-          <template #item="slotProps">
-              <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"/>
-          </template>
-          <template #thumbnail="slotProps">
-              <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt"/>
-              {{slotProps.item.thumbnailImageSrc}}
-          </template>
-      </Galleria>
-      <Button label="Show Images" icon="pi pi-external-link" @click="displayBasic = true" />    
+    <Galleria
+      :value="imagesMAP"
+      :responsiveOptions="responsiveOptions"
+      :numVisible="1"
+      containerStyle="max-width: 70%"
+      :circular="true"
+      :fullScreen="true"
+      :showItemNavigators="true"
+      :showThumbnails="false"
+      v-model:visible="displayMAP"
+    >
+      <template #item="slotProps">
+        <img :src="slotProps.item.itemImageSrc" style="width: 90%;" :alt="slotProps.item.alt" class="zoom"/>
+      </template>
+      <template #thumbnail="slotProps">
+        <img
+          :src="slotProps.item.thumbnailImageSrc"
+          :alt="slotProps.item.alt"
+        />
+        {{ slotProps.item.thumbnailImageSrc }}
+      </template>
+         <template #footer>
+           <h1>Hover Mouse over Image</h1>
+        </template>
+    </Galleria>
+    <Button
+      class="p-button-outlined p-button-raised"
+      label="Images"
+      icon="pi pi-external-link"
+      @click="displayMAP = true"
+    />
     <div class="p-grid p-jc-center">
       <div class="p-col-1">
         <Avatar
@@ -198,12 +240,37 @@
       A website that allows customers to book appointments, services and make
       payments for various services offered by the saloon
     </p>
-    <Button
-      class="p-button-outlined p-button-raised"
-      @click="visibleFull = true"
-      >View Images</Button
+    <Galleria
+      :value="imagesSMP"
+      :responsiveOptions="responsiveOptions"
+      :numVisible="1"
+      containerStyle="max-width: 70%"
+      :circular="true"
+      :fullScreen="true"
+      :showItemNavigators="true"
+      :showThumbnails="false"
+      v-model:visible="displaySMP"
     >
-
+      <template #item="slotProps">
+        <img :src="slotProps.item.itemImageSrc" style="width: 90%;" :alt="slotProps.item.alt" class="zoom"/>
+      </template>
+      <template #thumbnail="slotProps">
+        <img
+          :src="slotProps.item.thumbnailImageSrc"
+          :alt="slotProps.item.alt"
+        />
+        {{ slotProps.item.thumbnailImageSrc }}
+      </template>
+         <template #footer>
+           <h1>Hover Mouse over Image</h1>
+        </template>
+    </Galleria>
+   <Button
+      class="p-button-outlined p-button-raised"
+      label="Images"
+      icon="pi pi-external-link"
+      @click="displaySMP = true"
+    />
     <div class="p-grid p-jc-center">
       <div class="p-col-1">
         <Avatar
@@ -224,7 +291,9 @@ export default {
   name: "Uni",
   data() {
     return {
-      images: null,
+      imagesITP: null,
+      imagesMAP: null,
+      imagesSMP: null,
       activeIndex: 0,
       visibleFull: false,
       displayCustom: false,
@@ -246,7 +315,9 @@ export default {
           numVisible: 1,
         },
       ],
-      displayBasic: false,
+      displayITP: false,
+      displayMAP: false,
+      displaySMP: false,
     };
   },
   galleriaService: null,
@@ -254,8 +325,9 @@ export default {
     this.galleriaService = new PhotoService();
   },
   mounted() {
-    this.images = this.galleriaService.getImagesITP().data;
-    console.log(this.images);
+    this.imagesITP = this.galleriaService.getImagesITP().data;
+    this.imagesMAP = this.galleriaService.getImagesMAP().data;
+    this.imagesSMP = this.galleriaService.getImagesSMP().data;
   },
   methods: {
     imageClick(index) {
@@ -274,5 +346,13 @@ export default {
 }
 #subject {
   margin-top: 5%;
+}
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
 }
 </style>
