@@ -1,13 +1,11 @@
 <template>
     <div>
-        <div class="p-text-left">
-            <h3>Work Experience: Hughes Systique Corporation, Gurgaon, India (2016-2019)
-            </h3>
-            </div>
+        <h1 class="p-text-left">Work Experience: Hughes Systique Corporation, Gurgaon, India (2016-2019)
+            </h1>
         <div class="p-d-flex p-flex-column" id="experience">
             <div class="p-grid  p-jc-between">
                 <div class="p-text-left p-col-8">
-                    <h2>ISRO Satellite Voice Gateway</h2>
+                    <h3>ISRO Satellite Voice Gateway</h3>
                         The project involved the development of a voice gateway unit for the Indian Space and Research Organisation's GSAT-6 satellite network that would allow terrestrial (telephone) calls over their satellite network.
                         <ul>
                             <li>Developed 2 out of 8 core modules involving satellite control transport and satellite resource management.</li>
@@ -24,8 +22,7 @@
                     </Card>
                 </div>
                 <div class="p-text-left p-col-8">
-                    <h2>Hotspot 2.0 Wifi Passpoint</h2>
-                        The project involved the development of a voice gateway unit for the Indian Space and Research Organisation's GSAT-6 satellite network that would allow terrestrial (telephone) calls over their satellite network.
+                    <h3>Hotspot 2.0 Wifi Passpoint</h3>
                         <ul>
                             <li>Migrated an existing licence validation server to a docker based micro service.</li>
                             <li>Developed a micro service to encrypt and redirect application logs.</li>
@@ -43,7 +40,7 @@
                     </Card>
                 </div>
                 <div class="p-text-left p-col-8">
-                    <h2>Passive monitor for OTT media traffic</h2>
+                    <h3>Passive monitor for OTT media traffic</h3>
                         The project involved the development of a system capable of monitoring an over-the-top media stream network at extremely high data rates by using the Data Plane Development Kit - DPDK.
                         <ul>
                             <li>Designed and implemented a custom packet filtering algorithm along with a user-based control-plane wrapper.</li>
@@ -61,7 +58,7 @@
                     </Card>
                 </div>
                 <div class="p-text-left p-col-8">
-                    <h2>High performance WIFI Access Point</h2>
+                    <h3>High performance WIFI Access Point</h3>
                         The project involved the development of a high performance WIFI-Access-Point image to support the multi-channel radio architecture.
                         <ul>
                             <li>Testing of custom ‘OpenWRT’ images</li>

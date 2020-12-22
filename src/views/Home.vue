@@ -1,25 +1,15 @@
 <template>
   <div>
     <div class="p-grid p-jc-between" id="ishan">
-      <div class="p-col-3 p-text-left" >
+      <div class="p-offset-2 p-col-3 p-text-center" >
         <div class="box">Ishan Goyal</div>
       </div>
-      <div class="p-col-5 p-text-right">
-        <div class="box">
-          <a href="https://github.com/Ishan27g" target="_blank">
-            <Avatar image="https://img.icons8.com/color/000000/github--v1.png" size="large" shape="circle" style="margin-right:100px;" v-tooltip.bottom="'Open Github'"/>
-          </a>
-          <a href="mailto:ishan.goyal@student.unimelb.edu.au">
-            <Avatar image="https://img.icons8.com/fluent/96/000000/send-mass-email.png" size="large" shape="circle" style="margin-right:60px;" alt=""
-             v-tooltip.bottom="'Send Email'"/>
-            </a>
-        </div>
-      </div>
+      
     </div>
     <div class="p-grid p-jc-between" id="bioInfo">
     <div class="p-col-7">
       <div class="box ">
-          <div class="p-text-left">
+          <div class="p-text-center">
             <span>
               <p>I am a student at the University of Melbourne, pursuing a master's in software engineering.</p>
               <p>I enjoy web development, with particular expertise in backend technologies.</p>
@@ -88,4 +78,5 @@ export default {
     font-size: 50px;
     color: #494141;
   }
+  
 </style>
