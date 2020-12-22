@@ -1,29 +1,17 @@
 {
     "data":[
         {
-            "itemImageSrc": "src/assets/images/photos/customize.png",
-            "thumbnailImageSrc": "",
-            "alt": "",
-            "title": "Profile Settings"
-        }  ,
-        {
-            "itemImageSrc": "images/photos/Server.png",
-            "thumbnailImageSrc": "",
-            "alt": "",
-            "title": "Profile Settings"
-        }  ,
-        {
-            "itemImageSrc": "images/photos/postquestion2.png",
-            "thumbnailImageSrc": "",
-            "alt": "",
-            "title": "Profile Settings"
-        }  ,
-        {
             "itemImageSrc": "images/photos/customize.png",
-            "alt": "Description for Image 1",
             "thumbnailImageSrc": "",
+            "alt": "",
             "title": "Customise homepage"
-        },
+        }  ,
+        {
+            "itemImageSrc": "images/photos/eportfolio-V5.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Architecture"
+        }  ,
         {
             "itemImageSrc": "images/photos/documentPreview.png",
             "thumbnailImageSrc": "",

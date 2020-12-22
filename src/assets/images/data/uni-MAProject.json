@@ -1,34 +1,28 @@
 {
     "data":[
         {
-            "itemImageSrc": "images/photos/customize.png",
+            "itemImageSrc": "images/photos/deploymentDiagram.png",
             "thumbnailImageSrc": "",
             "alt": "",
-            "title": "Profile Settings"
+            "title": "Server deployment diagram"
         }  ,
+        {
+            "itemImageSrc": "images/photos/postquestion2.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Mobile add question"
+        }  ,
+        {
+            "itemImageSrc": "images/photos/RightToAsk-1.png",
+            "thumbnailImageSrc": "",
+            "alt": "",
+            "title": "Mobile"
+        },
         {
             "itemImageSrc": "images/photos/Server.png",
             "thumbnailImageSrc": "",
             "alt": "",
-            "title": "Profile Settings"
-        }  ,
-        {
-            "itemImageSrc": "images/photos/documentPreview.png",
-            "thumbnailImageSrc": "",
-            "alt": "",
-            "title": "Document Preview Mode"
-        },
-        {
-            "itemImageSrc": "images/photos/genTimeline.png",
-            "thumbnailImageSrc": "",
-            "alt": "",
-            "title": "Timeline"
-        },
-        {
-            "itemImageSrc": "images/photos/profile.png",
-            "thumbnailImageSrc": "",
-            "alt": "",
-            "title": "Profile Settings"
-        }  
+            "title": "Server"
+        }
     ]
 }
