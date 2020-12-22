@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <Bg />
-  </div>
+
     <div class="p-d-flex" id="app" >
+      <Bg />
       <div class="p-grid p-jc-between">
         <div class="p-col-1">
           <a href="https://github.com/Ishan27g" target="_blank">
@@ -44,6 +43,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #080808;
+  margin-top: 3%;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;

@@ -31,7 +31,7 @@
                   enable: true,
                   value_area: 600
               },
-              value: 50
+              value: 70,
           },
           opacity: {
               value: 2
@@ -41,7 +41,7 @@
           },
           size: {
               random: true,
-              value: 6
+              value: 8
           }
       },
           detectRetina: true
