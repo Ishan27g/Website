@@ -12,12 +12,10 @@
             <i class="pi pi-home" style="fontSize: 3em;"></i>
           </router-link>
         </div>
-        <div class="p-col-1">
-          <a href="mailto:ishan.goyal@student.unimelb.edu.au">
+        <a href="mailto:ishan.goyal@student.unimelb.edu.au">
             <Avatar image="https://img.icons8.com/fluent/96/000000/send-mass-email.png" size="large" shape="circle" style="margin-right:60px;" alt=""
              v-tooltip.bottom="'Send Email'"/>
           </a>
-        </div>
         <body>
           <router-view> </router-view>
         </body>
@@ -29,9 +27,19 @@
 import Bg from './components/Bg'
 export default {
   name: 'App',
+  data() {
+    return {
+      email: false
+    }
+  },
   components : {
     Bg
-  }
+  },
+  methods: {
+    showEmail(){
+      this.email= true
+    }
+  },
 }
 </script>
 
