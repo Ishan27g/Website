@@ -5,7 +5,21 @@
       The E-portfolio allows students to create custom profiles to showcase
       their documents and achievements to potential employers.
     </p>
-    <a href="https://github.com/Ishan27g/LIMQA" target="_blank">Code repository</a>
+    <div class="p-grid p-jc-left">
+      <div class="p-col-2">
+        <a href="https://github.com/Ishan27g/LIMQA" target="_blank"
+          >Code repository</a
+        >
+      </div>
+      <div class="p-col-2">
+        <Button
+          class="p-button-outlined p-button-raised"
+          @click="visibleFull = true"
+          >View Images</Button
+        >
+      
+      </div>
+    </div>
     <div class="p-grid p-jc-center">
       <div class="p-col-1">
         <Avatar
@@ -54,6 +68,17 @@
       A mobile application that acts as a platform for public concesus of
       political processes by involving MP's with citizens.
     </p>
+    <Galleria :value="images" :responsiveOptions="responsiveOptions" :numVisible="1" containerStyle="max-width: 850px"
+          :circular="true" :fullScreen="true" :showItemNavigators="true" :showThumbnails="false" v-model:visible="displayBasic">
+          <template #item="slotProps">
+              <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"/>
+          </template>
+          <template #thumbnail="slotProps">
+              <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt"/>
+              {{slotProps.item.thumbnailImageSrc}}
+          </template>
+      </Galleria>
+      <Button label="Show Images" icon="pi pi-external-link" @click="displayBasic = true" />    
     <div class="p-grid p-jc-center">
       <div class="p-col-1">
         <Avatar
@@ -115,8 +140,9 @@
 
     <h2 id="subject">WebCrawler : COMP30023</h2>
     <p>A web crawler written according to custom specifications, in a hurry.</p>
-    <a href="https://github.com/Ishan27g/WebCrawler-in-C" target="_blank">Code repository</a>
-
+    <a href="https://github.com/Ishan27g/WebCrawler-in-C" target="_blank"
+      >Code repository</a
+    >
     <div class="p-grid p-jc-center">
       <div class="p-col-1">
         <Avatar
@@ -142,7 +168,11 @@
       perform CRUD operations on a shared dictionary. Utilizes multiple types of
       thread pools.
     </p>
-    <a href="https://github.com/Ishan27g/Dictionary-ClientServer" target="_blank">Code repository</a>
+    <a
+      href="https://github.com/Ishan27g/Dictionary-ClientServer"
+      target="_blank"
+      >Code repository</a
+    >
 
     <div class="p-grid p-jc-center">
       <div class="p-col-1">
@@ -168,6 +198,12 @@
       A website that allows customers to book appointments, services and make
       payments for various services offered by the saloon
     </p>
+    <Button
+      class="p-button-outlined p-button-raised"
+      @click="visibleFull = true"
+      >View Images</Button
+    >
+
     <div class="p-grid p-jc-center">
       <div class="p-col-1">
         <Avatar
@@ -182,8 +218,51 @@
 </template>
 
 <script>
+import PhotoService from "../service/PhotoService";
+
 export default {
   name: "Uni",
+  data() {
+    return {
+      images: null,
+      activeIndex: 0,
+      visibleFull: false,
+      displayCustom: false,
+      responsiveOptions: [
+        {
+          breakpoint: "1500px",
+          numVisible: 5,
+        },
+        {
+          breakpoint: "1024px",
+          numVisible: 3,
+        },
+        {
+          breakpoint: "768px",
+          numVisible: 2,
+        },
+        {
+          breakpoint: "560px",
+          numVisible: 1,
+        },
+      ],
+      displayBasic: false,
+    };
+  },
+  galleriaService: null,
+  created() {
+    this.galleriaService = new PhotoService();
+  },
+  mounted() {
+    this.images = this.galleriaService.getImagesITP().data;
+    console.log(this.images);
+  },
+  methods: {
+    imageClick(index) {
+      this.activeIndex = index;
+      this.displayCustom = true;
+    },
+  },
 };
 </script>
 

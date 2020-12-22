@@ -1,0 +1,16 @@
+{
+    "data":[
+        {
+            "itemImageSrc": "src/assets/postquestion2.png",
+            "thumbnailImageSrc": "src/assets/postquestion2.png",
+            "alt": "Description for Image 1",
+            "title": "Title 1"
+        },
+        {
+            "itemImageSrc": "src/assets/RightToAsk-1.png",
+            "thumbnailImageSrc": "src/assets/RightToAsk-1.png",
+            "alt": "Description for Image 1",
+            "title": "Title 2"
+        }        
+    ]
+}

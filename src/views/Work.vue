@@ -198,7 +198,7 @@ export default {
 
 <style >
 #experience {
-  font-size: 22px;
+  font-size: 20px;
   color: #000000;
 }
 #tech {
