@@ -1,6 +1,5 @@
-<template>
-
-    <div class="p-d-flex" id="app" >
+<template id="app">
+    <div class="p-d-flex">
       <Bg />
       <div class="p-grid p-jc-between">
         <div class="p-col-1">
@@ -48,7 +47,8 @@ export default {
   margin-right: 5%;
   margin-bottom: 5%;
   padding: 2%;
-  background-Color:rgba(248, 248, 248, 0.842);
+  background-Color:rgba(248, 248, 248, 0.945);
+
 }
 
 </style>
