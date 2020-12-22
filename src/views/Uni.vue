@@ -268,7 +268,7 @@ export default {
 
 <style >
 #Uni {
-  font-size: 22px;
+  font-size: 20px;
   text-align: left;
   color: #000000;
 }
