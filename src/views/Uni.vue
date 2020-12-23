@@ -7,7 +7,10 @@
     </p>
     <div class="p-grid p-jc-left">
       <div class="p-col-2">
-        <a href="https://github.com/Ishan27g/LIMQA" target="_blank"
+        <a
+          href="https://github.com/Ishan27g/LIMQA"
+          target="_blank"
+          class="p-text-bold"
           >Code repository</a
         >
       </div>
@@ -192,7 +195,10 @@
 
     <h2 id="subject">WebCrawler : COMP30023</h2>
     <p>A web crawler written according to custom specifications, in a hurry.</p>
-    <a href="https://github.com/Ishan27g/WebCrawler-in-C" target="_blank"
+    <a
+      href="https://github.com/Ishan27g/WebCrawler-in-C"
+      target="_blank"
+      class="p-text-bold"
       >Code repository</a
     >
     <div class="p-grid p-jc-center">
@@ -223,6 +229,7 @@
     <a
       href="https://github.com/Ishan27g/Dictionary-ClientServer"
       target="_blank"
+      class="p-text-bold"
       >Code repository</a
     >
 

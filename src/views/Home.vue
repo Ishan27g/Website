@@ -27,21 +27,21 @@
           </div>
         </div>
       </div>
-      <div class="p-col-3">
+      <div class="p-col-3" >
         <div class="box p-shadow-24">
           <Card id="menu">
             <template #content>
               <router-link to="/work">
-                <div class="p-text-centre">Work Experience</div>
+                <div class="p-text-centre p-text-bold">Work Experience</div>
               </router-link>
               <router-link to="/uni">
-                <div class="p-text-centre">University Projects</div>
+                <div class="p-text-centre p-text-bold">University Projects</div>
               </router-link>
               <router-link to="/">
-                <div class="p-text-centre">Side Projects</div>
+                <div class="p-text-centre p-text-bold">Side Projects</div>
               </router-link>
               <router-link to="/">
-                <div class="p-text-centre">Timeline</div>
+                <div class="p-text-centre p-text-bold">Timeline</div>
               </router-link>
             </template>
           </Card>
@@ -84,4 +84,5 @@ export default {
   font-size: 50px;
   color: #494141;
 }
+
 </style>

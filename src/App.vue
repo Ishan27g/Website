@@ -93,4 +93,8 @@ export default {
 .animate__animated.animate__fadeOut {
   --animate-duration: 2s;
 }
+a {
+    text-decoration: none;
+    color:#080808;
+}
 </style>
