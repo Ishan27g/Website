@@ -39,10 +39,7 @@
               </router-link>
               <router-link to="/side">
                 <div class="p-text-centre p-text-bold">Side Projects</div>
-              </router-link>
-              <router-link to="/">
-                <div class="p-text-centre p-text-bold">Timeline</div>
-              </router-link>
+              </router-link>              
             </template>
           </Card>
         </div>

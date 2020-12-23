@@ -1,6 +1,7 @@
 <template>
+<div>
   <h2 class="p-text-left p-text-bold">Side Projects</h2>
-  <div class="p-pb-3" id="tabs">
+  <div class="p-pb-5" id="tabs">
     <Button
       @click="active = 0"
       class="p-button-text"
@@ -132,6 +133,7 @@
       </AccordionTab>
     </Accordion>
   </div>
+  </div>
 </template>
 
 <script>
@@ -151,6 +153,6 @@ export default {
 }
 #Side {
   text-align: left;
-  min-width: 80%;
+  min-width: 70%;
 }
 </style>

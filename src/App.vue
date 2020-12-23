@@ -14,7 +14,9 @@
       </div>
       <div class="p-col-2" v-tooltip.bottom="'Home'">
         <router-link to="/">
-          <img src="https://img.icons8.com/plasticine/60/000000/home-page.png"/>
+          <img
+            src="https://img.icons8.com/plasticine/60/000000/home-page.png"
+          />
         </router-link>
       </div>
       <div class="p-col-2">
@@ -34,17 +36,25 @@
           dismissable:true
         >
           <h3>ishan.goyal@student.unimelb.edu.au</h3>
-          <a href="mailto:ishan.goyal@student.unimelb.edu.au" class="p-text-bold">Send Email</a>
+          <a
+            href="mailto:ishan.goyal@student.unimelb.edu.au"
+            class="p-text-bold"
+            >Send Email</a
+          >
         </Sidebar>
       </div>
       <body>
-        <transition
-          mode="out-in"
-          enter-active-class="animate__animated animate__fadeIn"
-          leave-active-class="animate__animated animate__fadeOut"
-        >
-          <router-view> </router-view>
-        </transition>
+        <div>
+          <router-view v-slot="{ Component }">
+            <transition
+              mode="out-in"
+              enter-active-class="animate__animated animate__fadeIn"
+              leave-active-class="animate__animated animate__fadeOut"
+            >
+              <component :is="Component" />
+            </transition>
+          </router-view>
+        </div>
       </body>
     </div>
   </div>
@@ -65,10 +75,7 @@ export default {
   methods: {
     showEmail() {
       this.email = true;
-    },
-    removeEmail() {
-      this.email = false;
-    },
+    }
   },
 };
 </script>
@@ -88,13 +95,13 @@ export default {
   background-color: rgba(248, 248, 248, 0.945);
 }
 .animate__animated.animate__fadeIn {
-  --animate-duration: 2s;
+  --animate-duration: 1s;
 }
 .animate__animated.animate__fadeOut {
-  --animate-duration: 2s;
+  --animate-duration: 1s;
 }
 a {
-    text-decoration: none;
-    color:#080808;
+  text-decoration: none;
+  color: #080808;
 }
 </style>
