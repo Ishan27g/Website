@@ -24,7 +24,12 @@
           v-model:visible="displayITP"
         >
           <template #item="slotProps">
-            <img :src="slotProps.item.itemImageSrc" class="zoom" style="width: 90%;"  :alt="slotProps.item.alt" />
+            <img
+              :src="slotProps.item.itemImageSrc"
+              class="zoom"
+              style="width: 90%"
+              :alt="slotProps.item.alt"
+            />
           </template>
           <template #thumbnail="slotProps">
             <img
@@ -37,7 +42,7 @@
         <Button
           class="p-button-outlined p-button-raised"
           label="Images"
-          icon="pi pi-external-link"
+          icon="pi pi-images"
           @click="displayITP = true"
         />
       </div>
@@ -102,7 +107,12 @@
       v-model:visible="displayMAP"
     >
       <template #item="slotProps">
-        <img :src="slotProps.item.itemImageSrc" style="width: 90%;" :alt="slotProps.item.alt" class="zoom"/>
+        <img
+          :src="slotProps.item.itemImageSrc"
+          style="width: 90%"
+          :alt="slotProps.item.alt"
+          class="zoom"
+        />
       </template>
       <template #thumbnail="slotProps">
         <img
@@ -111,14 +121,14 @@
         />
         {{ slotProps.item.thumbnailImageSrc }}
       </template>
-         <template #footer>
-           <h1>Hover Mouse over Image</h1>
-        </template>
+      <template #footer>
+        <h1>Hover Mouse over Image</h1>
+      </template>
     </Galleria>
     <Button
       class="p-button-outlined p-button-raised"
       label="Images"
-      icon="pi pi-external-link"
+      icon="pi pi-images"
       @click="displayMAP = true"
     />
     <div class="p-grid p-jc-center">
@@ -252,7 +262,12 @@
       v-model:visible="displaySMP"
     >
       <template #item="slotProps">
-        <img :src="slotProps.item.itemImageSrc" style="width: 90%;" :alt="slotProps.item.alt" class="zoom"/>
+        <img
+          :src="slotProps.item.itemImageSrc"
+          style="width: 90%"
+          :alt="slotProps.item.alt"
+          class="zoom"
+        />
       </template>
       <template #thumbnail="slotProps">
         <img
@@ -261,14 +276,14 @@
         />
         {{ slotProps.item.thumbnailImageSrc }}
       </template>
-         <template #footer>
-           <h1>Hover Mouse over Image</h1>
-        </template>
+      <template #footer>
+        <h1>Hover Mouse over Image</h1>
+      </template>
     </Galleria>
-   <Button
+    <Button
       class="p-button-outlined p-button-raised"
       label="Images"
-      icon="pi pi-external-link"
+      icon="pi pi-images"
       @click="displaySMP = true"
     />
     <div class="p-grid p-jc-center">
@@ -348,11 +363,11 @@ export default {
   margin-top: 5%;
 }
 .zoom {
-  transition: transform .2s;
+  transition: transform 0.2s;
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }
 </style>

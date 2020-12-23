@@ -15,7 +15,7 @@ import Timeline from 'primevue/timeline';
 import Particles from "particles.vue3";
 import Fieldset from 'primevue/fieldset';
 import Galleria from 'primevue/galleria';
-
+import 'animate.css'
 
 import 'primeflex/primeflex.css'
 
