@@ -34,7 +34,7 @@
           dismissable:true
         >
           <h3>ishan.goyal@student.unimelb.edu.au</h3>
-          <a href="mailto:ishan.goyal@student.unimelb.edu.au">Send Email</a>
+          <a href="mailto:ishan.goyal@student.unimelb.edu.au" class="p-text-bold">Send Email</a>
         </Sidebar>
       </div>
       <body>

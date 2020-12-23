@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="p-col-3" >
-        <div class="box p-shadow-24">
+        <div class="box p-shadow-6">
           <Card id="menu">
             <template #content>
               <router-link to="/work">
@@ -37,7 +37,7 @@
               <router-link to="/uni">
                 <div class="p-text-centre p-text-bold">University Projects</div>
               </router-link>
-              <router-link to="/">
+              <router-link to="/side">
                 <div class="p-text-centre p-text-bold">Side Projects</div>
               </router-link>
               <router-link to="/">
