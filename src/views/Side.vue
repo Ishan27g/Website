@@ -4,26 +4,30 @@
   <div class="p-pb-5" id="tabs">
     <Button
       @click="active = 0"
-      class="p-button-text"
+      class="p-button-text p-button-rounded p-button-lg"
       label="Https RSA-Client "
     />
     <Button
       @click="active = 1"
-      class="p-button-text p-mr-2"
+      class="p-button-text p-button-rounded p-button-lg"
       label="Portfolio Website"
     />
     <Button
       @click="active = 2"
-      class="p-button-text p-mr-2"
+      class="p-button-text p-button-rounded p-button-lg"
       label="Micro Service Validator"
     />
     <Button
-      class="p-button-text p-mr-2"
+      class="p-button-text p-button-rounded p-button-lg"
       label="Vue+Golang+MongoDB"
     />
     <Button
-      class="p-button-text p-mr-2"
+      class="p-button-text p-button-rounded p-button-lg"
       label="Docker Microservices DB"
+    />
+    <Button
+      class="p-button-text p-button-rounded p-button-lg"
+      label="File upload server"
     />
   </div>
   <div id="Side">

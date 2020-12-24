@@ -23,7 +23,7 @@ import 'animate.css'
 
 import 'primeflex/primeflex.css'
 
-import 'primevue/resources/themes/mdc-light-indigo/theme.css'
+import 'primevue/resources/themes/arya-blue/theme.css'
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 

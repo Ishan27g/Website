@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="p-grid p-jc-between" id="ishan">
-      <div class="p-offset-2 p-col-3 p-text-center">
+      <div class="p-offset-2 p-col-7 p-text-center">
         <div class="box">Ishan Goyal</div>
       </div>
     </div>
@@ -28,9 +28,7 @@
         </div>
       </div>
       <div class="p-col-3" >
-        <div class="box p-shadow-6">
-          <Card id="menu">
-            <template #content>
+          <div id="menu">
               <router-link to="/work">
                 <div class="p-text-centre p-text-bold">Work Experience</div>
               </router-link>
@@ -40,9 +38,7 @@
               <router-link to="/side">
                 <div class="p-text-centre p-text-bold">Side Projects</div>
               </router-link>              
-            </template>
-          </Card>
-        </div>
+          </div>
       </div>
     </div>
     <router-view> </router-view>
@@ -71,15 +67,14 @@ export default {
 }
 #menu {
   position: relative;
-  margin-top: 40px;
-  line-height: 50px;
-  font-size: 20px;
+  margin-top: 60px;
+  line-height: 60px;
+  font-size: 28px;
 }
 #ishan {
   position: relative;
   margin-top: 80px;
   font-size: 50px;
-  color: #494141;
 }
 
 </style>

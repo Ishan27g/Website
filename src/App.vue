@@ -86,13 +86,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #080808;
-  margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
+  color: #F9F5FF;
+  margin-left: 8%;
+  margin-right: 8%;
   margin-bottom: 5%;
-  padding: 2%;
-  background-color: rgba(248, 248, 248, 0.945);
+  padding: 1.5%;
+  background-color:#28262C;
 }
 .animate__animated.animate__fadeIn {
   --animate-duration: 1s;
@@ -102,6 +101,7 @@ export default {
 }
 a {
   text-decoration: none;
-  color: #080808;
+  color: #009FF5;
+
 }
 </style>

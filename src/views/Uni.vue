@@ -43,7 +43,7 @@
           </template>
         </Galleria>
         <Button
-          class="p-button-outlined p-button-raised"
+          class="p-button-outlined p-button-rounded p-button-raised"
           label="Images"
           icon="pi pi-images"
           @click="displayITP = true"
@@ -129,7 +129,7 @@
       </template>
     </Galleria>
     <Button
-      class="p-button-outlined p-button-raised"
+      class="p-button-outlined p-button-rounded p-button-raised"
       label="Images"
       icon="pi pi-images"
       @click="displayMAP = true"
@@ -288,7 +288,7 @@
       </template>
     </Galleria>
     <Button
-      class="p-button-outlined p-button-raised"
+      class="p-button-outlined p-button-rounded p-button-raised"
       label="Images"
       icon="pi pi-images"
       @click="displaySMP = true"
@@ -364,7 +364,6 @@ export default {
 #Uni {
   font-size: 20px;
   text-align: left;
-  color: #000000;
 }
 #subject {
   margin-top: 5%;
@@ -377,4 +376,5 @@ export default {
 .zoom:hover {
   transform: scale(1.5);
 }
+
 </style>
