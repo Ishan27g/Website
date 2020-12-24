@@ -50,7 +50,7 @@
         />
       </div>
     </div>
-    <div class="p-grid p-jc-center">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/color/96/000000/mongodb.png"
@@ -134,7 +134,7 @@
       icon="pi pi-images"
       @click="displayMAP = true"
     />
-    <div class="p-grid p-jc-center">
+    <div class="p-grid  p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/nolan/64/react-native.png"
@@ -201,7 +201,7 @@
       class="p-text-bold"
       >Code repository</a
     >
-    <div class="p-grid p-jc-center">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/color/96/000000/c-programming.png"
@@ -233,7 +233,7 @@
       >Code repository</a
     >
 
-    <div class="p-grid p-jc-center">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"
@@ -293,7 +293,7 @@
       icon="pi pi-images"
       @click="displaySMP = true"
     />
-    <div class="p-grid p-jc-center">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/windows/32/000000/wix.png"

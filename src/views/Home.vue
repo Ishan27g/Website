@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="p-grid p-jc-between" id="ishan">
-      <div class="p-offset-2 p-col-7 p-text-center">
+      <div class="p-offset-2 p-col-7 p-text-left">
         <div class="box">Ishan Goyal</div>
       </div>
     </div>

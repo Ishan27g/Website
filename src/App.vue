@@ -2,7 +2,7 @@
   <div class="p-d-flex">
     <Bg />
     <div class="p-grid p-jc-between">
-      <div class="p-col-1">
+      <div class="p-col-2">
         <a href="https://github.com/Ishan27g" target="_blank">
           <Avatar
             image="https://img.icons8.com/color/000000/github--v1.png"
@@ -24,7 +24,6 @@
           image="https://img.icons8.com/fluent/96/000000/send-mass-email.png"
           size="large"
           shape="circle"
-          style="margin-right: 60px"
           alt=""
           v-tooltip.bottom="'Send Email'"
           @click="showEmail"
