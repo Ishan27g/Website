@@ -1,82 +1,80 @@
 <template>
   <div>
     <div class="p-grid p-jc-between" id="ishan">
-      <div class="p-offset-2 p-col-3 p-text-center" >
+      <div class="p-offset-2 p-col-7 p-text-left">
         <div class="box">Ishan Goyal</div>
       </div>
-      
     </div>
     <div class="p-grid p-jc-between" id="bioInfo">
-    <div class="p-col-7">
-      <div class="box ">
+      <div class="p-col-7">
+        <div class="box">
           <div class="p-text-center">
             <span>
-              <p>I am a student at the University of Melbourne, pursuing a master's in software engineering.</p>
-              <p>I enjoy web development, with particular expertise in backend technologies.</p>
-              <p>I have just under 3 years of professional experience in developing software solutions in the wireless communication domain.</p>
+              <p>
+                I am a student at the University of Melbourne, pursuing a
+                master's in software engineering.
+              </p>
+              <p>
+                I enjoy web development, with particular expertise in backend
+                technologies.
+              </p>
+              <p>
+                I have just under 3 years of professional experience in
+                developing software solutions in the wireless communication
+                domain.
+              </p>
             </span>
           </div>
-      </div>
-    </div>
-    <div class="p-col-3">
-      <div class="box p-shadow-24">
-           <Card id="menu">
-              <template #content>
-                  <router-link to="/work">
-                    <div class="p-text-centre">Work Experience</div>
-                  </router-link>
-                  <router-link to="/uni">
-                    <div class="p-text-centre">University Projects</div>
-                  </router-link>
-                  <router-link to="/">
-                    <div class="p-text-centre">Side Projects</div>
-                  </router-link>
-                  <router-link to="/">
-                    <div class="p-text-centre">Timeline</div>
-                  </router-link>
-              </template>
-          </Card>
         </div>
+      </div>
+      <div class="p-col-3" >
+          <div id="menu">
+              <router-link to="/work">
+                <div class="p-text-centre p-text-bold">Work Experience</div>
+              </router-link>
+              <router-link to="/uni">
+                <div class="p-text-centre p-text-bold">University Projects</div>
+              </router-link>
+              <router-link to="/side">
+                <div class="p-text-centre p-text-bold">Side Projects</div>
+              </router-link>              
+          </div>
       </div>
     </div>
     <router-view> </router-view>
   </div>
 </template>
 <script>
-
-
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
     return {
       email: false,
-    }
+    };
   },
   methods: {
     showEmail() {
-        this.email = true
-      },
+      this.email = true;
+    },
   },
-}
+};
 </script>
 
 <style >
-  #bioInfo {
-    margin-top: 100px;
-    font-size: 26px;
+#bioInfo {
+  margin-top: 100px;
+  font-size: 26px;
+}
+#menu {
+  position: relative;
+  margin-top: 60px;
+  line-height: 60px;
+  font-size: 28px;
+}
+#ishan {
+  position: relative;
+  margin-top: 80px;
+  font-size: 50px;
+}
 
-  }
-  #menu {
-    position: relative;
-    margin-top: 40px;
-    line-height: 50px;
-    font-size: 20px;
-  }
-  #ishan {
-    position: relative;
-    margin-top: 80px;
-    font-size: 50px;
-    color: #494141;
-  }
-  
 </style>

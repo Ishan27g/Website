@@ -15,11 +15,15 @@ import Timeline from 'primevue/timeline';
 import Particles from "particles.vue3";
 import Fieldset from 'primevue/fieldset';
 import Galleria from 'primevue/galleria';
+import Accordion from 'primevue/accordion';
+import AccordionTab from 'primevue/accordiontab';
 
+
+import 'animate.css'
 
 import 'primeflex/primeflex.css'
 
-import 'primevue/resources/themes/saga-purple/theme.css'
+import 'primevue/resources/themes/arya-blue/theme.css'
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 
@@ -38,6 +42,8 @@ app.component('Dialog', Dialog)
 app.component('Timeline', Timeline)
 app.component('Fieldset', Fieldset)
 app.component('Galleria', Galleria)
+app.component('Accordion', Accordion)
+app.component('AccordionTab', AccordionTab)
 
 
 app.directive('tooltip', Tooltip)

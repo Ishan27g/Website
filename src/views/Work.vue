@@ -23,8 +23,7 @@
           </ul>
         </div>
         <div class="p-text-center p-col-4">
-          <Card style="width: auto" id="tech">
-            <template #content>
+          <div style="width: auto" id="tech">
               <Avatar
                 image="https://img.icons8.com/color/96/000000/c-programming.png"
                 size="xlarge"
@@ -43,8 +42,7 @@
                 shape="circle"
                 v-tooltip.bottom="'Git'"
               />
-            </template>
-          </Card>
+          </div>
         </div>
         <div class="p-text-left p-col-8">
           <h3>Hotspot 2.0 Wifi Passpoint</h3>
@@ -60,8 +58,7 @@
           </ul>
         </div>
         <div class="p-text-center p-col-4">
-          <Card style="width: auto" id="tech">
-            <template #content>
+          <div style="width: auto" id="tech">
               <Avatar
                 image="https://img.icons8.com/officel/40/000000/console.png"
                 size="xlarge"
@@ -92,8 +89,7 @@
                 shape="circle"
                 v-tooltip.bottom="'Git'"
               />
-            </template>
-          </Card>
+          </div>
         </div>
         <div class="p-text-left p-col-8">
           <h3>Passive monitor for OTT media traffic</h3>
@@ -109,8 +105,7 @@
           </ul>
         </div>
         <div class="p-text-center p-col-4">
-          <Card style="width: auto" id="tech">
-            <template #content>
+          <div style="width: auto" id="tech">
               <Avatar
                 image="https://img.icons8.com/color/96/000000/c-programming.png"
                 size="xlarge"
@@ -135,8 +130,7 @@
                 shape="circle"
                 v-tooltip.bottom="'C++'"
               />
-            </template>
-          </Card>
+          </div>
         </div>
         <div class="p-text-left p-col-8">
           <h3>High performance WIFI Access Point</h3>
@@ -156,8 +150,7 @@
           </ul>
         </div>
         <div class="p-text-center p-col-4">
-          <Card style="width: auto" id="tech">
-            <template #content>
+          <div style="width: auto" id="tech">
               <Avatar
                 image="https://img.icons8.com/ios-filled/100/000000/git.png"
                 size="xlarge"
@@ -182,8 +175,7 @@
                 shape="circle"
                 v-tooltip.bottom="'SQL'"
               />
-            </template>
-          </Card>
+          </div>
         </div>
       </div>
     </div>
@@ -199,7 +191,6 @@ export default {
 <style >
 #experience {
   font-size: 20px;
-  color: #000000;
 }
 #tech {
   position: relative;

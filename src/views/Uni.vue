@@ -7,7 +7,10 @@
     </p>
     <div class="p-grid p-jc-left">
       <div class="p-col-2">
-        <a href="https://github.com/Ishan27g/LIMQA" target="_blank"
+        <a
+          href="https://github.com/Ishan27g/LIMQA"
+          target="_blank"
+          class="p-text-bold"
           >Code repository</a
         >
       </div>
@@ -24,7 +27,12 @@
           v-model:visible="displayITP"
         >
           <template #item="slotProps">
-            <img :src="slotProps.item.itemImageSrc" class="zoom" style="width: 90%;"  :alt="slotProps.item.alt" />
+            <img
+              :src="slotProps.item.itemImageSrc"
+              class="zoom"
+              style="width: 90%"
+              :alt="slotProps.item.alt"
+            />
           </template>
           <template #thumbnail="slotProps">
             <img
@@ -35,14 +43,14 @@
           </template>
         </Galleria>
         <Button
-          class="p-button-outlined p-button-raised"
+          class="p-button-outlined p-button-rounded p-button-raised"
           label="Images"
-          icon="pi pi-external-link"
+          icon="pi pi-images"
           @click="displayITP = true"
         />
       </div>
     </div>
-    <div class="p-grid p-jc-center">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/color/96/000000/mongodb.png"
@@ -102,7 +110,12 @@
       v-model:visible="displayMAP"
     >
       <template #item="slotProps">
-        <img :src="slotProps.item.itemImageSrc" style="width: 90%;" :alt="slotProps.item.alt" class="zoom"/>
+        <img
+          :src="slotProps.item.itemImageSrc"
+          style="width: 90%"
+          :alt="slotProps.item.alt"
+          class="zoom"
+        />
       </template>
       <template #thumbnail="slotProps">
         <img
@@ -111,17 +124,17 @@
         />
         {{ slotProps.item.thumbnailImageSrc }}
       </template>
-         <template #footer>
-           <h1>Hover Mouse over Image</h1>
-        </template>
+      <template #footer>
+        <h1>Hover Mouse over Image</h1>
+      </template>
     </Galleria>
     <Button
-      class="p-button-outlined p-button-raised"
+      class="p-button-outlined p-button-rounded p-button-raised"
       label="Images"
-      icon="pi pi-external-link"
+      icon="pi pi-images"
       @click="displayMAP = true"
     />
-    <div class="p-grid p-jc-center">
+    <div class="p-grid  p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/nolan/64/react-native.png"
@@ -182,10 +195,13 @@
 
     <h2 id="subject">WebCrawler : COMP30023</h2>
     <p>A web crawler written according to custom specifications, in a hurry.</p>
-    <a href="https://github.com/Ishan27g/WebCrawler-in-C" target="_blank"
+    <a
+      href="https://github.com/Ishan27g/WebCrawler-in-C"
+      target="_blank"
+      class="p-text-bold"
       >Code repository</a
     >
-    <div class="p-grid p-jc-center">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/color/96/000000/c-programming.png"
@@ -213,10 +229,11 @@
     <a
       href="https://github.com/Ishan27g/Dictionary-ClientServer"
       target="_blank"
+      class="p-text-bold"
       >Code repository</a
     >
 
-    <div class="p-grid p-jc-center">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"
@@ -252,7 +269,12 @@
       v-model:visible="displaySMP"
     >
       <template #item="slotProps">
-        <img :src="slotProps.item.itemImageSrc" style="width: 90%;" :alt="slotProps.item.alt" class="zoom"/>
+        <img
+          :src="slotProps.item.itemImageSrc"
+          style="width: 90%"
+          :alt="slotProps.item.alt"
+          class="zoom"
+        />
       </template>
       <template #thumbnail="slotProps">
         <img
@@ -261,17 +283,17 @@
         />
         {{ slotProps.item.thumbnailImageSrc }}
       </template>
-         <template #footer>
-           <h1>Hover Mouse over Image</h1>
-        </template>
+      <template #footer>
+        <h1>Hover Mouse over Image</h1>
+      </template>
     </Galleria>
-   <Button
-      class="p-button-outlined p-button-raised"
+    <Button
+      class="p-button-outlined p-button-rounded p-button-raised"
       label="Images"
-      icon="pi pi-external-link"
+      icon="pi pi-images"
       @click="displaySMP = true"
     />
-    <div class="p-grid p-jc-center">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/windows/32/000000/wix.png"
@@ -342,17 +364,17 @@ export default {
 #Uni {
   font-size: 20px;
   text-align: left;
-  color: #000000;
 }
 #subject {
   margin-top: 5%;
 }
 .zoom {
-  transition: transform .2s;
+  transition: transform 0.2s;
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }
+
 </style>
