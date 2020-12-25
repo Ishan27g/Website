@@ -2,7 +2,7 @@
   <div>
     <div class="p-grid p-jc-between" id="ishan">
       <div class="p-offset-2 p-col-7 p-text-left">
-        <div class="box">Ishan Goyal</div>
+        <div class="box" style="color:#F7F8F1">Ishan Goyal</div>
       </div>
     </div>
     <div class="p-grid p-jc-between" id="bioInfo">
@@ -64,6 +64,7 @@ export default {
 #bioInfo {
   margin-top: 100px;
   font-size: 26px;
+  color: #D6E5E3;
 }
 #menu {
   position: relative;

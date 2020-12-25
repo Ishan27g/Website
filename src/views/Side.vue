@@ -1,33 +1,38 @@
 <template>
   <div>
-    <h2 class="p-text-left p-text-bold">Side Projects</h2>
-    <div class="p-pb-5" id="tabs">
+    <h2 >Side Projects</h2>
+    <div class="p-pb-5 p-text-center" id="tabs">
       <Button
         @click="active = 0"
         class="p-button-text p-button-rounded p-button-lg"
+        style="color: #FF9233;"
         label="Https RSA-Client "
       />
       <Button
         @click="active = 1"
         class="p-button-text p-button-rounded p-button-lg"
+        style="color: #FF9233;"
         label="Portfolio Website"
       />
       <Button
         @click="active = 2"
         class="p-button-text p-button-rounded p-button-lg"
+        style="color: #FF9233;"
         label="Micro Service Validator"
       />
       <Button
         @click="active = 3"
         class="p-button-text p-button-rounded p-button-lg"
+        style="color: #FF9233;"
         label="File upload server"
       />
       <Button
         class="p-button-text p-button-rounded p-button-lg"
+        style="color: #FF9233;"
         label="Vue+Golang+MongoDB"
       />
     </div>
-    <div id="Side">
+    <div id="Side" class="p-grid p-jc-center">
       <Accordion v-model:activeIndex="active">
         <AccordionTab header="Https RSA-Client">
           <p>
@@ -200,6 +205,7 @@ export default {
 }
 #Side {
   text-align: left;
-  min-width: 70%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 </style>

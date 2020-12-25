@@ -24,7 +24,7 @@ import 'animate.css'
 
 import 'primeflex/primeflex.css'
 
-import 'primevue/resources/themes/nova/theme.css'
+import 'primevue/resources/themes/arya-orange/theme.css'
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 

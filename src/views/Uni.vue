@@ -44,6 +44,7 @@
         </Galleria>
         <Button
           class="p-button-outlined p-button-rounded p-button-raised"
+          style="color: #ff9233"
           label="Images"
           icon="pi pi-images"
           @click="displayITP = true"
@@ -130,11 +131,12 @@
     </Galleria>
     <Button
       class="p-button-outlined p-button-rounded p-button-raised"
+      style="color: #ff9233"
       label="Images"
       icon="pi pi-images"
       @click="displayMAP = true"
     />
-    <div class="p-grid  p-jc-end">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/nolan/64/react-native.png"
@@ -289,6 +291,7 @@
     </Galleria>
     <Button
       class="p-button-outlined p-button-rounded p-button-raised"
+      style="color: #ff9233"
       label="Images"
       icon="pi pi-images"
       @click="displaySMP = true"
@@ -364,6 +367,8 @@ export default {
 #Uni {
   font-size: 20px;
   text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 #subject {
   margin-top: 5%;
@@ -376,5 +381,4 @@ export default {
 .zoom:hover {
   transform: scale(1.5);
 }
-
 </style>

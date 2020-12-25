@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1 class="p-text-left">
+    <h1 class="p-text-left p-offset-1">
       Work Experience: Hughes Systique Corporation, Gurgaon, India (2016-2019)
     </h1>
     <div class="p-d-flex p-flex-column" id="experience">
       <div class="p-grid p-jc-between">
         <div class="p-text-left p-col-8">
-          <h3>ISRO Satellite Voice Gateway</h3>
+          <h3 id="heading">ISRO Satellite Voice Gateway</h3>
           The project involved the development of a voice gateway unit for the
           Indian Space and Research Organisation's GSAT-6 satellite network that
           would allow terrestrial (telephone) calls over their satellite
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="p-text-left p-col-8">
-          <h3>Hotspot 2.0 Wifi Passpoint</h3>
+          <h3 id="heading">Hotspot 2.0 Wifi Passpoint</h3>
           <ul>
             <li>
               Migrated an existing licence validation server to a docker based
@@ -92,7 +92,7 @@
           </div>
         </div>
         <div class="p-text-left p-col-8">
-          <h3>Passive monitor for OTT media traffic</h3>
+          <h3 id="heading">Passive monitor for OTT media traffic</h3>
           The project involved the development of a system capable of monitoring
           an over-the-top media stream network at extremely high data rates by
           using the Data Plane Development Kit - DPDK.
@@ -133,7 +133,7 @@
           </div>
         </div>
         <div class="p-text-left p-col-8">
-          <h3>High performance WIFI Access Point</h3>
+          <h3  id="heading">High performance WIFI Access Point</h3>
           The project involved the development of a high performance
           WIFI-Access-Point image to support the multi-channel radio
           architecture.
@@ -191,9 +191,17 @@ export default {
 <style >
 #experience {
   font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#heading{
+  color: #dd700a;
 }
 #tech {
   position: relative;
   margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+
 }
 </style>
