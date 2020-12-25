@@ -66,6 +66,8 @@ export default {
   data() {
     return {
       email: false,
+      textcolor: '#000000',
+      bgcolor:'#F9F5FF'
     };
   },
   components: {
@@ -85,12 +87,13 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #F9F5FF;
   margin-left: 8%;
   margin-right: 8%;
   margin-bottom: 5%;
   padding: 1.5%;
-  background-color:#28262C;
+  color:#000000; 
+  background-color:#F9F5FF;
+  
 }
 .animate__animated.animate__fadeIn {
   --animate-duration: 1s;
