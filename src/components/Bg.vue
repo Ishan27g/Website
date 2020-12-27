@@ -11,7 +11,7 @@
           value: '#D57A66',
         },
         links: {
-          color: '#593073',
+          color: '#0A090B',
           distance: 200,
           enable: true,
           opacity: 1,
@@ -33,7 +33,7 @@
             enable: true,
             value_area: 600,
           },
-          value: 70,
+          value: 50,
         },
         opacity: {
           value: 2,
@@ -43,7 +43,7 @@
         },
         size: {
           random: true,
-          value: 8,
+          value: 5,
         },
       },
       detectRetina: true,

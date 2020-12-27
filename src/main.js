@@ -17,13 +17,14 @@ import Fieldset from 'primevue/fieldset';
 import Galleria from 'primevue/galleria';
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
+import ToggleButton from 'primevue/togglebutton';
 
 
 import 'animate.css'
 
 import 'primeflex/primeflex.css'
 
-import 'primevue/resources/themes/mdc-light-indigo/theme.css'
+import 'primevue/resources/themes/arya-orange/theme.css'
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 
@@ -44,6 +45,7 @@ app.component('Fieldset', Fieldset)
 app.component('Galleria', Galleria)
 app.component('Accordion', Accordion)
 app.component('AccordionTab', AccordionTab)
+app.component('ToggleButton', ToggleButton)
 
 
 app.directive('tooltip', Tooltip)

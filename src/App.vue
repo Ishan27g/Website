@@ -1,8 +1,8 @@
 <template id="app">
-  <div class="p-d-flex">
+  <div class="p-d-flex" style="background-color:#1F1F1F;">
     <Bg />
-    <div class="p-grid p-jc-between">
-      <div class="p-col-1">
+    <div class="p-grid p-jc-between" id="top">
+      <div class="p-col-2">
         <a href="https://github.com/Ishan27g" target="_blank">
           <Avatar
             image="https://img.icons8.com/color/000000/github--v1.png"
@@ -24,7 +24,6 @@
           image="https://img.icons8.com/fluent/96/000000/send-mass-email.png"
           size="large"
           shape="circle"
-          style="margin-right: 60px"
           alt=""
           v-tooltip.bottom="'Send Email'"
           @click="showEmail"
@@ -81,18 +80,19 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #080808;
+  margin: auto;
   margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  padding: 2%;
-  background-color: rgba(248, 248, 248, 0.945);
+  max-width: 1200px;
+  color: #F7F8F1;
+}
+#top{
+  margin-top: 20px;
 }
 .animate__animated.animate__fadeIn {
   --animate-duration: 1s;
@@ -102,6 +102,7 @@ export default {
 }
 a {
   text-decoration: none;
-  color: #080808;
+  color: #FF9233;
+
 }
 </style>
