@@ -62,7 +62,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/color/96/000000/nodejs.png"
+          image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'NodeJS'"
@@ -86,7 +86,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/ios-filled/100/000000/git.png"
+          image="https://img.icons8.com/color/100/000000/git.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'Git'"
@@ -147,7 +147,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/color/96/000000/nodejs.png"
+          image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'NodeJS'"
@@ -179,7 +179,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/ios-filled/50/000000/postgreesql.png"
+          image="https://img.icons8.com/color/100/000000/postgreesql.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'PostgreSQL'"
@@ -299,7 +299,7 @@
     <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/windows/32/000000/wix.png"
+          image="https://img.icons8.com/windows/100/4a90e2/wix.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'Wix'"

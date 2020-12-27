@@ -1,34 +1,34 @@
 <template>
   <div>
-    <h2 >Side Projects</h2>
+    <h2>Side Projects</h2>
     <div class="p-pb-5 p-text-center" id="tabs">
       <Button
         @click="active = 0"
         class="p-button-text p-button-rounded p-button-lg"
-        style="color: #FF9233;"
+        style="color: #ff9233"
         label="Https RSA-Client "
       />
       <Button
         @click="active = 1"
         class="p-button-text p-button-rounded p-button-lg"
-        style="color: #FF9233;"
+        style="color: #ff9233"
         label="Portfolio Website"
       />
       <Button
         @click="active = 2"
         class="p-button-text p-button-rounded p-button-lg"
-        style="color: #FF9233;"
+        style="color: #ff9233"
         label="Micro Service Validator"
       />
       <Button
         @click="active = 3"
         class="p-button-text p-button-rounded p-button-lg"
-        style="color: #FF9233;"
+        style="color: #ff9233"
         label="File upload server"
       />
       <Button
         class="p-button-text p-button-rounded p-button-lg"
-        style="color: #FF9233;"
+        style="color: #ff9233"
         label="Vue+Golang+MongoDB"
       />
     </div>
@@ -59,7 +59,7 @@
             </div>
             <div class="p-col-2">
               <Avatar
-                image="https://img.icons8.com/color/96/000000/nodejs.png"
+                image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
                 size="xlarge"
                 shape="circle"
                 v-tooltip.bottom="'NodeJS'"
