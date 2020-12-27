@@ -1,7 +1,7 @@
 <template id="app">
-  <div class="p-d-flex">
+  <div class="p-d-flex" style="background-color:#1F1F1F;">
     <Bg />
-    <div class="p-grid p-jc-between">
+    <div class="p-grid p-jc-between" id="top">
       <div class="p-col-2">
         <a href="https://github.com/Ishan27g" target="_blank">
           <Avatar
@@ -80,17 +80,19 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #F9F5FF;
-  margin-left: 8%;
-  margin-right: 8%;
-  margin-bottom: 5%;
-  padding: 1.5%;
-  background-color:#28262C;
+  margin: auto;
+  margin-top: 3%;
+  max-width: 1200px;
+  color: #F7F8F1;
+}
+#top{
+  margin-top: 20px;
 }
 .animate__animated.animate__fadeIn {
   --animate-duration: 1s;
@@ -100,7 +102,7 @@ export default {
 }
 a {
   text-decoration: none;
-  color: #009FF5;
+  color: #FF9233;
 
 }
 </style>

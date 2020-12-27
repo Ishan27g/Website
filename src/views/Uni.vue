@@ -44,6 +44,7 @@
         </Galleria>
         <Button
           class="p-button-outlined p-button-rounded p-button-raised"
+          style="color: #ff9233"
           label="Images"
           icon="pi pi-images"
           @click="displayITP = true"
@@ -61,7 +62,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/color/96/000000/nodejs.png"
+          image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'NodeJS'"
@@ -85,7 +86,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/ios-filled/100/000000/git.png"
+          image="https://img.icons8.com/color/100/000000/git.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'Git'"
@@ -130,11 +131,12 @@
     </Galleria>
     <Button
       class="p-button-outlined p-button-rounded p-button-raised"
+      style="color: #ff9233"
       label="Images"
       icon="pi pi-images"
       @click="displayMAP = true"
     />
-    <div class="p-grid  p-jc-end">
+    <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
           image="https://img.icons8.com/nolan/64/react-native.png"
@@ -145,7 +147,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/color/96/000000/nodejs.png"
+          image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'NodeJS'"
@@ -177,7 +179,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/ios-filled/50/000000/postgreesql.png"
+          image="https://img.icons8.com/color/100/000000/postgreesql.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'PostgreSQL'"
@@ -289,6 +291,7 @@
     </Galleria>
     <Button
       class="p-button-outlined p-button-rounded p-button-raised"
+      style="color: #ff9233"
       label="Images"
       icon="pi pi-images"
       @click="displaySMP = true"
@@ -296,7 +299,7 @@
     <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/windows/32/000000/wix.png"
+          image="https://img.icons8.com/windows/100/4a90e2/wix.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'Wix'"
@@ -364,6 +367,8 @@ export default {
 #Uni {
   font-size: 20px;
   text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 #subject {
   margin-top: 5%;
@@ -376,5 +381,4 @@ export default {
 .zoom:hover {
   transform: scale(1.5);
 }
-
 </style>
