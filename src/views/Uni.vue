@@ -367,8 +367,8 @@ export default {
 #Uni {
   font-size: 20px;
   text-align: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left : 2%;
+  margin-right : 2%;
 }
 #subject {
   margin-top: 5%;
