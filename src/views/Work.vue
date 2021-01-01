@@ -185,8 +185,8 @@ export default {
 <style >
 #experience {
   font-size: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left : 2%;
+  margin-right : 2%;
 }
 #heading{
   color: #dd700a;
