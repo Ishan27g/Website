@@ -37,7 +37,7 @@
                 v-tooltip.bottom="'Linux'"
               />
               <Avatar
-                image="https://img.icons8.com/ios-filled/100/000000/git.png"
+                image="https://img.icons8.com/color/100/000000/git.png"
                 size="xlarge"
                 shape="circle"
                 v-tooltip.bottom="'Git'"
@@ -84,7 +84,7 @@
                 v-tooltip.bottom="'Linux'"
               />
               <Avatar
-                image="https://img.icons8.com/ios-filled/100/000000/git.png"
+                image="https://img.icons8.com/color/100/000000/git.png"
                 size="xlarge"
                 shape="circle"
                 v-tooltip.bottom="'Git'"
@@ -119,16 +119,10 @@
                 v-tooltip.bottom="'Linux'"
               />
               <Avatar
-                image="https://img.icons8.com/ios-filled/100/000000/git.png"
+                image="https://img.icons8.com/color/100/000000/git.png"
                 size="xlarge"
                 shape="circle"
                 v-tooltip.bottom="'Git'"
-              />
-              <Avatar
-                image="https://img.icons8.com/ios/150/000000/c-plus-plus-logo.png"
-                size="xlarge"
-                shape="circle"
-                v-tooltip.bottom="'C++'"
               />
           </div>
         </div>
@@ -152,7 +146,7 @@
         <div class="p-text-center p-col-4">
           <div style="width: auto" id="tech">
               <Avatar
-                image="https://img.icons8.com/ios-filled/100/000000/git.png"
+                image="https://img.icons8.com/color/100/000000/git.png"
                 size="xlarge"
                 shape="circle"
                 v-tooltip.bottom="'Git'"
@@ -191,8 +185,8 @@ export default {
 <style >
 #experience {
   font-size: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left : 2%;
+  margin-right : 2%;
 }
 #heading{
   color: #dd700a;

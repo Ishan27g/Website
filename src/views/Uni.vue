@@ -62,7 +62,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/color/96/000000/nodejs.png"
+          image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'NodeJS'"
@@ -86,7 +86,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/ios-filled/100/000000/git.png"
+          image="https://img.icons8.com/color/100/000000/git.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'Git'"
@@ -99,43 +99,57 @@
       A mobile application that acts as a platform for public concesus of
       political processes by involving MP's with citizens.
     </p>
-    <Galleria
-      :value="imagesMAP"
-      :responsiveOptions="responsiveOptions"
-      :numVisible="1"
-      containerStyle="max-width: 70%"
-      :circular="true"
-      :fullScreen="true"
-      :showItemNavigators="true"
-      :showThumbnails="false"
-      v-model:visible="displayMAP"
-    >
-      <template #item="slotProps">
-        <img
-          :src="slotProps.item.itemImageSrc"
-          style="width: 90%"
-          :alt="slotProps.item.alt"
-          class="zoom"
+    <div class="p-grid p-jc-left">
+      <div class="p-col-2">
+        <a
+          href="https://github.com/vteague/prototypeRightToAsk"
+          target="_blank"
+          class="p-text-bold"
+          >Code repository</a
+        >
+      </div>
+
+      <div class="p-col-2">
+        <Galleria
+          :value="imagesMAP"
+          :responsiveOptions="responsiveOptions"
+          :numVisible="1"
+          containerStyle="max-width: 70%"
+          :circular="true"
+          :fullScreen="true"
+          :showItemNavigators="true"
+          :showThumbnails="false"
+          v-model:visible="displayMAP"
+        >
+          <template #item="slotProps">
+            <img
+              :src="slotProps.item.itemImageSrc"
+              style="width: 90%"
+              :alt="slotProps.item.alt"
+              class="zoom"
+            />
+          </template>
+          <template #thumbnail="slotProps">
+            <img
+              :src="slotProps.item.thumbnailImageSrc"
+              :alt="slotProps.item.alt"
+            />
+            {{ slotProps.item.thumbnailImageSrc }}
+          </template>
+          <template #footer>
+            <h1>Hover Mouse over Image</h1>
+          </template>
+        </Galleria>
+
+        <Button
+          class="p-button-outlined p-button-rounded p-button-raised"
+          style="color: #ff9233"
+          label="Images"
+          icon="pi pi-images"
+          @click="displayMAP = true"
         />
-      </template>
-      <template #thumbnail="slotProps">
-        <img
-          :src="slotProps.item.thumbnailImageSrc"
-          :alt="slotProps.item.alt"
-        />
-        {{ slotProps.item.thumbnailImageSrc }}
-      </template>
-      <template #footer>
-        <h1>Hover Mouse over Image</h1>
-      </template>
-    </Galleria>
-    <Button
-      class="p-button-outlined p-button-rounded p-button-raised"
-      style="color: #ff9233"
-      label="Images"
-      icon="pi pi-images"
-      @click="displayMAP = true"
-    />
+      </div>
+    </div>
     <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
@@ -147,7 +161,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/color/96/000000/nodejs.png"
+          image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'NodeJS'"
@@ -179,7 +193,7 @@
       </div>
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/ios-filled/50/000000/postgreesql.png"
+          image="https://img.icons8.com/color/100/000000/postgreesql.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'PostgreSQL'"
@@ -299,7 +313,7 @@
     <div class="p-grid p-jc-end">
       <div class="p-col-1">
         <Avatar
-          image="https://img.icons8.com/windows/32/000000/wix.png"
+          image="https://img.icons8.com/windows/100/4a90e2/wix.png"
           size="xlarge"
           shape="circle"
           v-tooltip.bottom="'Wix'"
@@ -367,8 +381,8 @@ export default {
 #Uni {
   font-size: 20px;
   text-align: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 #subject {
   margin-top: 5%;

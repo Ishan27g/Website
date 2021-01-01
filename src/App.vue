@@ -1,5 +1,5 @@
 <template id="app">
-  <div class="p-d-flex" style="background-color:#1F1F1F;">
+  <div class="p-d-flex" style="background-color: #1f1f1f">
     <Bg />
     <div class="p-grid p-jc-between" id="top">
       <div class="p-col-2">
@@ -74,13 +74,12 @@ export default {
   methods: {
     showEmail() {
       this.email = true;
-    }
+    },
   },
 };
 </script>
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -89,9 +88,9 @@ export default {
   margin: auto;
   margin-top: 3%;
   max-width: 1200px;
-  color: #F7F8F1;
+  color: #ffffff;
 }
-#top{
+#top {
   margin-top: 20px;
 }
 .animate__animated.animate__fadeIn {
@@ -102,7 +101,7 @@ export default {
 }
 a {
   text-decoration: none;
-  color: #FF9233;
-
+  color: #dd700a;
+;
 }
 </style>
