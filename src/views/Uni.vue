@@ -5,7 +5,7 @@
       The E-portfolio allows students to create custom profiles to showcase
       their documents and achievements to potential employers.
     </p>
-    <div class="p-grid p-jc-left">
+    <div class="p-grid p-jc-around">
       <div class="p-col-2">
         <a
           href="https://github.com/Ishan27g/LIMQA"
@@ -50,47 +50,43 @@
           @click="displayITP = true"
         />
       </div>
-    </div>
-    <div class="p-grid p-jc-end">
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/color/96/000000/mongodb.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'MongoDB'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'NodeJS'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/clouds/100/000000/react.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'React'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/dusk/128/000000/docker.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'Docker'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/color/100/000000/git.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'Git'"
-        />
+      <div class="p-col-8 p-text-right">
+        <div style="width: auto" id="tech">
+          <Avatar
+            image="https://img.icons8.com/color/96/000000/mongodb.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'MongoDB'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'NodeJS'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/clouds/100/000000/react.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'React'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/dusk/128/000000/docker.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Docker'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/color/100/000000/git.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Git'"
+          />
+        </div>
       </div>
     </div>
 
@@ -99,7 +95,7 @@
       A mobile application that acts as a platform for public concesus of
       political processes by involving MP's with citizens.
     </p>
-    <div class="p-grid p-jc-left">
+    <div class="p-grid p-jc-around">
       <div class="p-col-2">
         <a
           href="https://github.com/vteague/prototypeRightToAsk"
@@ -149,90 +145,86 @@
           @click="displayMAP = true"
         />
       </div>
-    </div>
-    <div class="p-grid p-jc-end">
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/nolan/64/react-native.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'react-native'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'NodeJS'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/dusk/128/000000/docker.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'Docker'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/color/48/000000/nginx.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'Nginx'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/color/48/000000/golang.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'Golang'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/color/100/000000/postgreesql.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'PostgreSQL'"
-        />
-      </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/color/48/000000/bitbucket.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'BitBucket'"
-        />
+      <div class="p-col-8 p-text-right">
+        <div style="width: auto" id="tech">
+          <Avatar
+            image="https://img.icons8.com/nolan/64/react-native.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'react-native'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'NodeJS'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/dusk/128/000000/docker.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Docker'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/color/48/000000/nginx.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Nginx'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/color/48/000000/golang.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Golang'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/color/100/000000/postgreesql.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'PostgreSQL'"
+          />
+
+          <Avatar
+            image="https://img.icons8.com/color/48/000000/bitbucket.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'BitBucket'"
+          />
+        </div>
       </div>
     </div>
 
     <h2 id="subject">WebCrawler : COMP30023</h2>
     <p>A web crawler written according to custom specifications, in a hurry.</p>
-    <a
-      href="https://github.com/Ishan27g/WebCrawler-in-C"
-      target="_blank"
-      class="p-text-bold"
-      >Code repository</a
-    >
-    <div class="p-grid p-jc-end">
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/color/96/000000/c-programming.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'C Programming'"
-        />
+    <div class="p-grid p-jc-around">
+      <div class="p-col-2">
+        <a
+          href="https://github.com/Ishan27g/WebCrawler-in-C"
+          target="_blank"
+          class="p-text-bold"
+          >Code repository</a
+        >
       </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/color/48/000000/gitlab.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'Gitlab'"
-        />
+      <div class="p-col-10 p-text-right">
+        <div style="width: auto" id="tech">
+          <Avatar
+            image="https://img.icons8.com/color/96/000000/c-programming.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'C Programming'"
+          />
+          <Avatar
+            image="https://img.icons8.com/color/48/000000/gitlab.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Gitlab'"
+          />
+        </div>
       </div>
     </div>
 
@@ -242,29 +234,30 @@
       perform CRUD operations on a shared dictionary. Utilizes multiple types of
       thread pools.
     </p>
-    <a
-      href="https://github.com/Ishan27g/Dictionary-ClientServer"
-      target="_blank"
-      class="p-text-bold"
-      >Code repository</a
-    >
-
-    <div class="p-grid p-jc-end">
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'Java'"
-        />
+    <div class="p-grid p-jc-around">
+      <div class="p-col-2">
+        <a
+          href="https://github.com/Ishan27g/Dictionary-ClientServer"
+          target="_blank"
+          class="p-text-bold"
+          >Code repository</a
+        >
       </div>
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/officel/40/000000/console.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'Shell Script'"
-        />
+      <div class="p-col-10 p-text-right">
+        <div style="width: auto" id="tech">
+          <Avatar
+            image="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Java'"
+          />
+          <Avatar
+            image="https://img.icons8.com/officel/40/000000/console.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Shell Script'"
+          />
+        </div>
       </div>
     </div>
 
@@ -303,21 +296,25 @@
         <h1>Hover Mouse over Image</h1>
       </template>
     </Galleria>
-    <Button
-      class="p-button-outlined p-button-rounded p-button-raised"
-      style="color: #ff9233"
-      label="Images"
-      icon="pi pi-images"
-      @click="displaySMP = true"
-    />
-    <div class="p-grid p-jc-end">
-      <div class="p-col-1">
-        <Avatar
-          image="https://img.icons8.com/windows/100/4a90e2/wix.png"
-          size="xlarge"
-          shape="circle"
-          v-tooltip.bottom="'Wix'"
+    <div class="p-grid p-jc-around">
+      <div class="p-col-2">
+        <Button
+          class="p-button-outlined p-button-rounded p-button-raised"
+          style="color: #ff9233"
+          label="Images"
+          icon="pi pi-images"
+          @click="displaySMP = true"
         />
+      </div>
+      <div class="p-col-10 p-text-right">
+        <div style="width: auto" id="tech">
+          <Avatar
+            image="https://img.icons8.com/windows/100/4a90e2/wix.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Wix'"
+          />
+        </div>
       </div>
     </div>
   </div>
