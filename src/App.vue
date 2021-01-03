@@ -1,60 +1,65 @@
 <template id="app">
-  <div class="p-d-flex" style="background-color: #1f1f1f">
-    <Bg />
-    <div class="p-grid p-jc-between" id="top">
-      <div class="p-col-2">
-        <a href="https://github.com/Ishan27g" target="_blank">
+  <div class="p-grid p-jc-center">
+    <div
+      class="p-d-flex p-col-12 p-md-11 p-lg-9"
+      style="background-color: #1f1f1f"
+    >
+      <Bg />
+      <div class="p-grid p-jc-between" id="top">
+        <div class="p-col-2">
+          <a href="https://github.com/Ishan27g" target="_blank">
+            <Avatar
+              image="https://img.icons8.com/color/000000/github--v1.png"
+              size="large"
+              shape="circle"
+              v-tooltip.bottom="'Open Github'"
+            />
+          </a>
+        </div>
+        <div class="p-col-2" v-tooltip.bottom="'Home'">
+          <router-link to="/">
+            <img
+              src="https://img.icons8.com/plasticine/60/000000/home-page.png"
+            />
+          </router-link>
+        </div>
+        <div class="p-col-2">
           <Avatar
-            image="https://img.icons8.com/color/000000/github--v1.png"
+            image="https://img.icons8.com/fluent/96/000000/send-mass-email.png"
             size="large"
             shape="circle"
-            v-tooltip.bottom="'Open Github'"
+            alt=""
+            v-tooltip.bottom="'Send Email'"
+            @click="showEmail"
           />
-        </a>
-      </div>
-      <div class="p-col-2" v-tooltip.bottom="'Home'">
-        <router-link to="/">
-          <img
-            src="https://img.icons8.com/plasticine/60/000000/home-page.png"
-          />
-        </router-link>
-      </div>
-      <div class="p-col-2">
-        <Avatar
-          image="https://img.icons8.com/fluent/96/000000/send-mass-email.png"
-          size="large"
-          shape="circle"
-          alt=""
-          v-tooltip.bottom="'Send Email'"
-          @click="showEmail"
-        />
-        <Sidebar
-          v-model:visible="email"
-          :baseZIndex="1000"
-          position="top"
-          dismissable:true
-        >
-          <h3>ishan.goyal@student.unimelb.edu.au</h3>
-          <a
-            href="mailto:ishan.goyal@student.unimelb.edu.au"
-            class="p-text-bold"
-            >Send Email</a
+          <Sidebar
+            v-model:visible="email"
+            :baseZIndex="1000"
+            position="top"
+            dismissable:true
           >
-        </Sidebar>
-      </div>
-      <body>
-        <div>
-          <router-view v-slot="{ Component }">
-            <transition
-              mode="out-in"
-              enter-active-class="animate__animated animate__fadeIn"
-              leave-active-class="animate__animated animate__fadeOut"
+            <h3>ishan.goyal@student.unimelb.edu.au</h3>
+            <a
+              href="mailto:ishan.goyal@student.unimelb.edu.au"
+              class="p-text-bold"
+              >Send Email</a
             >
-              <component :is="Component" />
-            </transition>
-          </router-view>
+          </Sidebar>
         </div>
-      </body>
+        <body>
+          <div>
+            <router-view v-slot="{ Component }">
+              <transition
+                mode="out-in"
+                enter-active-class="animate__animated animate__fadeIn"
+                leave-active-class="animate__animated animate__fadeOut"
+              >
+                <component :is="Component" />
+              </transition>
+            </router-view>
+          </div>
+        </body>
+      </div>
     </div>
   </div>
 </template>
@@ -80,14 +85,14 @@ export default {
 </script>
 
 <style>
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin: auto;
   margin-top: 3%;
-  max-width: 1200px;
   color: #ffffff;
 }
 #top {
@@ -102,6 +107,5 @@ export default {
 a {
   text-decoration: none;
   color: #dd700a;
-;
 }
 </style>

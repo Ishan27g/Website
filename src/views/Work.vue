@@ -183,6 +183,8 @@ export default {
 </script>
 
 <style >
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 #experience {
   font-size: 20px;
   margin-left : 2%;

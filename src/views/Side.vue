@@ -1,52 +1,67 @@
 <template>
-  <div class="p-flex p-jc-center" style="max-width: 1100px; margin-left: 10%">
-    <h2>Side Projects</h2>
-    <div class="p-pb-5 p-text-center" id="tabs">
-      <Button
-        @click="active = 0"
-        class="p-button-text p-button-rounded p-button-lg"
-        style="color: #ff9233"
-        label="Finstagram "
-      />
-      <Button
-        @click="active = 1"
-        class="p-button-text p-button-rounded p-button-lg"
-        style="color: #ff9233"
-        label="Https RSA-Client"
-      />
-      <Button
-        @click="active = 2"
-        class="p-button-text p-button-rounded p-button-lg"
-        style="color: #ff9233"
-        label="Micro Service Validator"
-      />
-      <Button
-        @click="active = 3"
-        class="p-button-text p-button-rounded p-button-lg"
-        style="color: #ff9233"
-        label="Portfolio Website"
-      />
-
-      <Button
-        @click="active = 4"
-        class="p-button-text p-button-rounded p-button-lg"
-        style="color: #ff9233"
-        label="File upload server"
-      />
+  <div class="p-grid p-jc-around">
+    <div class="p-col-12">
+      <h2>Side Projects</h2>
     </div>
+    <div class="p-col-12 p-lg-10">
+      <div class="p-pb-5 p-text-center" id="tabs">
+        <Button
+          @click="active = 0"
+          class="p-button-text p-button-rounded p-button-lg"
+          style="color: #ff9233"
+          label="Finstagram "
+        />
+        <Button
+          @click="active = 1"
+          class="p-button-text p-button-rounded p-button-lg"
+          style="color: #ff9233"
+          label="Https RSA-Client"
+        />
+        <Button
+          @click="active = 2"
+          class="p-button-text p-button-rounded p-button-lg"
+          style="color: #ff9233"
+          label="Micro Service Validator"
+        />
+        <Button
+          @click="active = 3"
+          class="p-button-text p-button-rounded p-button-lg"
+          style="color: #ff9233"
+          label="Portfolio Website"
+        />
+
+        <Button
+          @click="active = 4"
+          class="p-button-text p-button-rounded p-button-lg"
+          style="color: #ff9233"
+          label="File upload server"
+        />
+      </div>
+    </div>
+    <div class="p-col-12 p-md-10 p-lg-10">
       <div id="Side" class="p-grid p-jc-center">
         <Accordion v-model:activeIndex="active">
           <AccordionTab header="Finstagram">
             <p>
-              A full stack minimal Instagram clone written in Vue.js and Golang
-              with signup and CRUD capabilities. Quasar framework is used for
-              the frontend. Fiber framework is used on the backend.
+              A full stack minimal Instagram clone: 
+              <ul>
+                <li>
+                  Frontend / User-interface written in Vue.js 
+                </li>
+                <li>
+                  Backend / Server written in Golang 
+                </li>
+              </ul>
+              The app allows registration, login as well as CRUD capabilities. 
+              Quasar framework is used for the frontend components. 
+              Fiber framework is used on the backend. 
+              The server connects to a MongoDB atlas cloud database.
             </p>
-            <p>
-              Frontend (Vue.js) is deployed to Netlify. Server (Golang) is
-              deployed to Heroku. The server connects to a MongoDB atlas cloud
-              database.
-            </p>
+            WIP : Deployment
+            <ul>
+              <li>Frontend (Vue.js) -> deploy to Netlify.</li>
+              <li>Server (Golang) deploy to Heroku.</li>
+            </ul>
             <a
               href="https://github.com/Ishan27g/finstagram"
               target="_blank"
@@ -233,6 +248,7 @@
           </AccordionTab>
         </Accordion>
       </div>
+    </div>
   </div>
 </template>
 
