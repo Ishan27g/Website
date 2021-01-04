@@ -62,12 +62,24 @@
               <li>Frontend (Vue.js) -> deploy to Netlify.</li>
               <li>Server (Golang) deploy to Heroku.</li>
             </ul>
-            <a
-              href="https://github.com/Ishan27g/finstagram"
+            <div class="p-grid">
+              <div class="p-col-3">
+              <a
+                href="https://github.com/Ishan27g/finstagram"
+                target="_blank"
+                class="p-text-bold"
+                >Code repository</a
+              >
+            </div>
+            <div class="p-col-3">
+             <a
+              href="https://ishan27g.github.io/finstagram/"
               target="_blank"
               class="p-text-bold"
-              >Code repository</a
-            >
+              >Website</a
+              >
+              </div>
+            </div>
             <div class="p-grid p-jc-center">
               <div class="p-col-2">
                 <Avatar
@@ -175,7 +187,7 @@
               deployed to Netlify.
             </p>
             <a
-              href="https://github.com/Ishan27g/myWebsite"
+              href="https://github.com/Ishan27g/Website"
               target="_blank"
               class="p-text-bold"
               >Code repository</a

@@ -1,17 +1,16 @@
 {
-    "data":[
-        {
+    "data": [{
             "itemImageSrc": "images/photos/customize.png",
             "thumbnailImageSrc": "",
             "alt": "",
             "title": "Customise homepage"
-        }  ,
+        },
         {
             "itemImageSrc": "images/photos/eportfolio-V5.png",
             "thumbnailImageSrc": "",
             "alt": "",
             "title": "Architecture"
-        }  ,
+        },
         {
             "itemImageSrc": "images/photos/documentPreview.png",
             "thumbnailImageSrc": "",
@@ -29,6 +28,6 @@
             "thumbnailImageSrc": "",
             "alt": "",
             "title": "Profile Settings"
-        }  
+        }
     ]
 }

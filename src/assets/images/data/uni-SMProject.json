@@ -1,17 +1,16 @@
 {
-    "data":[
-        {
+    "data": [{
             "itemImageSrc": "images/photos/Home page.png",
             "thumbnailImageSrc": "",
             "alt": "",
             "title": "Homepage"
-        }  ,
+        },
         {
             "itemImageSrc": "images/photos/Homepage 2.png",
             "thumbnailImageSrc": "",
             "alt": "",
             "title": "Homepage2"
-        }  ,
+        },
         {
             "itemImageSrc": "images/photos/BookingOptions.png",
             "thumbnailImageSrc": "",
@@ -35,6 +34,6 @@
             "thumbnailImageSrc": "",
             "alt": "",
             "title": "Profile Page"
-        }   
+        }
     ]
 }

@@ -56,13 +56,13 @@
       dismissable:true
     >
       <div class="p-grid p-jc-center">
-        <div class="p-col-8 p-md-6 p-lg-4 p-text-right">
+        <div class="p-col-12 p-md-6 p-lg-4 p-text-right">
           <div
             class="p-grid p-jc-around p-ai-center vertical-container"
             style="margin-top: 3%"
           >
             <div v-for="tech in techs1" :key="tech.tooltip">
-              <div class="p-col-4">
+              <div class="p-col-12 p-md-6">
                 <Avatar :image="tech.image" size="xlarge" shape="circle" />
                 <h4 class="p-text-center">{{ tech.tooltip }}</h4>
               </div>
@@ -70,7 +70,7 @@
           </div>
           <div class="p-grid p-jc-around vertical-container">
             <div v-for="tech in techs2" :key="tech.tooltip">
-              <div class="p-col-8">
+              <div class="p-col-12 p-md-6">
                 <Avatar :image="tech.image" size="xlarge" shape="circle" />
                 <h4 class="p-text-center">{{ tech.tooltip }}</h4>
               </div>
@@ -78,7 +78,7 @@
           </div>
           <div class="p-grid p-jc-around vertical-container">
             <div v-for="tech in techs3" :key="tech.tooltip">
-              <div class="p-col-8">
+              <div class="p-col-12 p-md-6">
                 <Avatar :image="tech.image" size="xlarge" shape="circle" />
                 <h4 class="p-text-center">{{ tech.tooltip }}</h4>
               </div>
@@ -86,7 +86,7 @@
           </div>
           <div class="p-grid p-jc-around p-ai-center vertical-container">
             <div v-for="tech in techs4" :key="tech.tooltip">
-              <div class="p-col-4">
+              <div class="p-col-12 p-md-6">
                 <Avatar :image="tech.image" size="xlarge" shape="circle" />
                 <div class="p-text-center">{{ tech.tooltip }}</div>
               </div>
