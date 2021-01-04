@@ -1,17 +1,16 @@
 {
-    "data":[
-        {
+    "data": [{
             "itemImageSrc": "images/photos/deploymentDiagram.png",
             "thumbnailImageSrc": "",
             "alt": "",
             "title": "Server deployment diagram"
-        }  ,
+        },
         {
             "itemImageSrc": "images/photos/postquestion2.png",
             "thumbnailImageSrc": "",
             "alt": "",
             "title": "Mobile add question"
-        }  ,
+        },
         {
             "itemImageSrc": "images/photos/RightToAsk-1.png",
             "thumbnailImageSrc": "",

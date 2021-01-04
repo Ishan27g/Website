@@ -41,6 +41,9 @@
             />
             {{ slotProps.item.thumbnailImageSrc }}
           </template>
+          <template #footer>
+            <h1>Hover Mouse over Image</h1>
+          </template>
         </Galleria>
         <Button
           class="p-button-outlined p-button-rounded p-button-raised"
@@ -390,6 +393,6 @@ export default {
 }
 
 .zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 </style>
