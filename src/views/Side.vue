@@ -187,7 +187,7 @@
               deployed to Netlify.
             </p>
             <a
-              href="https://github.com/Ishan27g/myWebsite"
+              href="https://github.com/Ishan27g/Website"
               target="_blank"
               class="p-text-bold"
               >Code repository</a
