@@ -40,6 +40,9 @@
           <router-link to="/side">
             <div class="p-text-centre p-text-bold p-text-wrap ">Side Projects</div>
           </router-link>
+           <router-link to="/openSource">
+            <div class="p-text-centre p-text-bold p-text-wrap">Open Source Contributions</div>
+          </router-link>
           <div @click="showTech()">
             <div class="p-text-centre p-text-bold p-text-wrap" style="color: #dd700a">
               Tech Stack

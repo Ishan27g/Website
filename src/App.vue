@@ -4,7 +4,6 @@
       class="p-d-flex p-col-12 p-md-11 p-lg-9"
       style="background-color: #1f1f1f"
     >
-      <Bg />
       <div class="p-grid p-jc-between" id="top">
         <div class="p-col-2">
           <a href="https://github.com/Ishan27g" target="_blank">
@@ -85,7 +84,6 @@ export default {
 </script>
 
 <style>
-
 #app {
   font-family: Helvetica;
   -webkit-font-smoothing: antialiased;

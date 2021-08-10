@@ -23,6 +23,12 @@ const routes = [{
         name: 'Side',
         component: () =>
             import ('../views/Side.vue')
+    },
+    {
+        path: '/openSource',
+        name: 'OpenSource',
+        component: () =>
+            import ('../views/os.vue')
     }
 ]
 
