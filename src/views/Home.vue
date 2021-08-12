@@ -4,10 +4,21 @@
       <div class="p-col-12 p-text-center">
         <div
           class="box"
-          style="color: #f7f8f1; font-family: 'Staatliches', cursive"
+          style="color: #f7f8f1; font-family: 'Montserrat', sans-serif; font-weight: 600;"
         >
-          Ishan Goyal
+          ISHAN GOYAL
         </div>
+        <img
+          src="https://avatars.githubusercontent.com/u/63078216?v=4"
+          style="
+            border-radius: 50%;
+            width: 20%;
+            display: block;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        />
       </div>
     </div>
     <div class="p-grid p-jc-between" id="bioInfo">
@@ -16,7 +27,8 @@
           <span>
             <p>
               I am a student at the University of Melbourne, pursuing a master's
-              in software engineering.
+              in software engineering. I am currently working as supervisor for
+              COMP30022 at Unimelb
             </p>
             <p>
               I enjoy web development, with particular expertise in backend
@@ -31,20 +43,31 @@
       </div>
       <div class="p-col-12 p-md-4 p-text-center">
         <div id="menu">
-          <router-link to="/work">
-            <div class="p-text-centre p-text-bold p-text-wrap">Work Experience</div>
-          </router-link>
           <router-link to="/uni">
-            <div class="p-text-centre p-text-bold p-text-wrap">University Projects</div>
+            <div class="p-text-centre p-text-bold p-text-wrap">
+              University Projects
+            </div>
           </router-link>
           <router-link to="/side">
-            <div class="p-text-centre p-text-bold p-text-wrap ">Side Projects</div>
+            <div class="p-text-centre p-text-bold p-text-wrap">
+              Side Projects
+            </div>
           </router-link>
-           <router-link to="/openSource">
-            <div class="p-text-centre p-text-bold p-text-wrap">Open Source Contributions</div>
+          <router-link to="/openSource">
+            <div class="p-text-centre p-text-bold p-text-wrap">
+              Open Source Contributions
+            </div>
+          </router-link>
+          <router-link to="/work">
+            <div class="p-text-centre p-text-bold p-text-wrap">
+              Work Experience
+            </div>
           </router-link>
           <div @click="showTech()">
-            <div class="p-text-centre p-text-bold p-text-wrap" style="color: #dd700a">
+            <div
+              class="p-text-centre p-text-bold p-text-wrap"
+              style="color: #dd700a"
+            >
               Tech Stack
             </div>
           </div>
@@ -112,8 +135,8 @@ export default {
           tooltip: "Golang",
         },
         {
-          image: "https://img.icons8.com/color/48/000000/javascript.png",
-          tooltip: "Javascript",
+          image: "https://img.icons8.com/color/48/000000/typescript.png",
+          tooltip: "Typescript",
         },
         {
           image: "https://img.icons8.com/color/96/000000/c-programming.png",
@@ -137,8 +160,8 @@ export default {
       ],
       techs3: [
         {
-          image: "https://img.icons8.com/color/100/000000/postgreesql.png",
-          tooltip: "PostgreSQL",
+          image: "https://img.icons8.com/color/100/000000/sql.png",
+          tooltip: "SQL",
         },
         {
           image: "https://img.icons8.com/color/96/000000/mongodb.png",
@@ -174,10 +197,14 @@ export default {
 </script>
 
 <style >
-@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+#ishan {
+  position: relative;
+  margin-top: 10px;
+  font-size: 50px;
+}
 #bioInfo {
-  margin-top: 100px;
+  margin-top: 25px;
   margin-left: 2%;
   margin-right: 2%;
   font-size: 24px;
@@ -189,13 +216,11 @@ export default {
   line-height: 40px;
   font-size: 20px;
 }
-#ishan {
-  position: relative;
-  margin-top: 80px;
-  font-size: 50px;
-}
 .vertical-container {
   margin: 0 auto;
   height: 150px;
+}
+p{
+    font-weight: 400;
 }
 </style>

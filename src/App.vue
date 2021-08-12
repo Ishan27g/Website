@@ -90,17 +90,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 2%;
   color: #ffffff;
 }
 #top {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .animate__animated.animate__fadeIn {
-  --animate-duration: 1s;
+  --animate-duration: 0.25s;
 }
 .animate__animated.animate__fadeOut {
-  --animate-duration: 1s;
+  --animate-duration: 0.25s;
 }
 a {
   text-decoration: none;

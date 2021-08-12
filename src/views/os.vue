@@ -16,9 +16,10 @@
               Added shipyard log command that allows the ability to tail
               shipyard resource logs, similar to docker-compose
             </li>
-            <li>Few core debug fixes</li>
+            <li>Added a few core debug fixes</li>
             <li>
               <a href="https://github.com/shipyard-run/shipyard/pull/134"
+                target="_blank"
                 >PR on Github</a
               >
             </li>

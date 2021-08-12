@@ -5,23 +5,23 @@
     </div>
     <div class="p-col-12 p-lg-10">
       <div class="p-pb-5 p-text-center" id="tabs">
-        <Button
+         <Button
           @click="active = 0"
           class="p-button-text p-button-rounded p-button-lg"
           style="color: #ff9233"
-          label="Finstagram "
+          label="Search & Upload Engine"
         />
         <Button
           @click="active = 1"
           class="p-button-text p-button-rounded p-button-lg"
           style="color: #ff9233"
-          label="Https RSA-Client"
+          label="MeowMeowBeenz"
         />
         <Button
           @click="active = 2"
           class="p-button-text p-button-rounded p-button-lg"
           style="color: #ff9233"
-          label="Micro Service Validator"
+          label="Finstagram"
         />
         <Button
           @click="active = 3"
@@ -29,19 +29,78 @@
           style="color: #ff9233"
           label="Portfolio Website"
         />
-
         <Button
           @click="active = 4"
           class="p-button-text p-button-rounded p-button-lg"
           style="color: #ff9233"
-          label="File upload server"
+          label="Merkle Tree"
         />
+        
       </div>
     </div>
     <div class="p-col-12 p-md-10 p-lg-10">
       <div id="Side" class="p-grid p-jc-center">
         <Accordion v-model:activeIndex="active">
-          <AccordionTab header="Finstagram">
+          <AccordionTab header="Search & Upload Engine">
+            <p>
+              A distributed file server based on the RAFT algorithm. 
+              Content of the uploaded files is mapped and stored in the form of an avl 
+              tree distributed amongst the peers, assuring efficient lookup & updates. 
+              The system is eventually consistent in the event of network partitions.
+            </p>
+            <a
+              href="https://github.com/Ishan27g/file-index-lookup-engine"
+              target="_blank"
+              class="p-text-bold"
+              >Code repository</a
+            >
+            <div class="p-grid p-jc-center">
+              <div class="p-col-2">
+                <Avatar
+                  image="https://img.icons8.com/color/48/000000/golang.png"
+                  size="xlarge"
+                  shape="circle"
+                  v-tooltip.bottom="'Golang'"
+                />
+              </div>
+              <div class="p-col-2">
+                <Avatar
+                  image="https://img.icons8.com/dusk/128/000000/docker.png"
+                  size="xlarge"
+                  shape="circle"
+                  v-tooltip.bottom="'Docker'"
+                />
+              </div>
+            </div>
+          </AccordionTab>
+          <AccordionTab header="MeowMeowBeenz">
+            <p>
+              MeowMeowBeenz app from the tv show "Community", 
+              season 5 episode - 
+              <a href="https://community-sitcom.fandom.com/wiki/MeowMeowBeenz"
+                target="_blank"
+                >App Development and Condiments</a
+              >.
+              I wrote this out of interest, to learn Kotlin
+            </p>
+            <a
+              href="https://github.com/Ishan27g/mmbeenz-App"
+              target="_blank"
+              class="p-text-bold"
+              >Code repository</a
+            >
+            <div class="p-grid p-jc-center">
+              <div class="p-col-2">
+                <Avatar
+                  image="https://img.icons8.com/color/48/000000/kotlin.png"
+                  size="xlarge"
+                  shape="circle"
+                  v-tooltip.bottom="'Kotlin'"
+                />
+              </div>
+            </div>
+          </AccordionTab>
+           <AccordionTab header="Finstagram">
             <p>
               A full stack minimal Instagram clone: 
               <ul>
@@ -107,84 +166,10 @@
               </div>
             </div>
           </AccordionTab>
-          <AccordionTab header="Https RSA-Client">
-            <p>
-              Automated https client that can send RSA encrypted requests as per
-              json files and validate against decrypted response. Public/Private
-              keys along with encryption/decryption is done through a
-              Node/ExpressJS microservice for easy migration to javascript.
-              Developed as an out of scope requirement for a university project
-            </p>
-            <a
-              href="https://github.com/Ishan27g/httpsTestClient"
-              target="_blank"
-              class="p-text-bold"
-              >Code repository</a
-            >
-            <div class="p-grid p-jc-center">
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/golang.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Golang'"
-                />
-              </div>
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/windows/100/26e07f/nodejs.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'NodeJS'"
-                />
-              </div>
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/javascript.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'javascript'"
-                />
-              </div>
-            </div>
-          </AccordionTab>
-          <AccordionTab header="Micro Service Validator">
-            <p>
-              An application that validates basic configuration between
-              dockerfiles, docker-compose and nginx. Two modes, static and
-              runtime. Written to practice Golang as well as an out of scope
-              requirement for a university project.
-            </p>
-            <a
-              href="https://github.com/Ishan27g/microServiceValidator"
-              target="_blank"
-              class="p-text-bold"
-              >Code repository</a
-            >
-            <div class="p-grid p-jc-center">
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/golang.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Golang'"
-                />
-              </div>
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/officel/40/000000/console.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Shell Script'"
-                />
-              </div>
-            </div>
-          </AccordionTab>
           <AccordionTab header="Portfolio Website">
             <p>
               This website, written in Vue.js. PrimeVue library is used for
-              various components and particles.js for the background. Website is
-              deployed to Netlify.
+              various components. Website is deployed to Netlify.
             </p>
             <a
               href="https://github.com/Ishan27g/Website"
@@ -211,14 +196,12 @@
               </div>
             </div>
           </AccordionTab>
-          <AccordionTab header="File upload server">
+          <AccordionTab header="Merkle Tree">
             <p>
-              A simple HTTP server to upload files. Makes it easy to share files
-              from mobile to laptop over WIFI. Written while learning Golang and
-              basic Html + CSS
+              A simple implementation of Merkle tree in Go.
             </p>
             <a
-              href="https://github.com/Ishan27g/File-upload-using-Go"
+              href="https://github.com/Ishan27g/merkle"
               target="_blank"
               class="p-text-bold"
               >Code repository</a
@@ -230,30 +213,6 @@
                   size="xlarge"
                   shape="circle"
                   v-tooltip.bottom="'Golang'"
-                />
-              </div>
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/javascript.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'javascript'"
-                />
-              </div>
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/nolan/64/html-5.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'html'"
-                />
-              </div>
-              <div class="p-col-1">
-                <Avatar
-                  image="https://img.icons8.com/dusk/128/000000/docker.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Docker'"
                 />
               </div>
             </div>
