@@ -14,7 +14,7 @@
             border-radius: 50%;
             width: 20%;
             display: block;
-            margin-top: 5px;
+            margin-top: 15px;
             margin-left: auto;
             margin-right: auto;
           "
@@ -201,20 +201,20 @@ export default {
 #ishan {
   position: relative;
   margin-top: 10px;
-  font-size: 50px;
+  font-size: 46px;
 }
 #bioInfo {
-  margin-top: 25px;
+  margin-top: 35px;
   margin-left: 2%;
   margin-right: 2%;
-  font-size: 24px;
+  font-size: 22px;
   color: #ffffff;
 }
 #menu {
   position: relative;
   margin-top: 20px;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .vertical-container {
   margin: 0 auto;

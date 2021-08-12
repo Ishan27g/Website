@@ -341,7 +341,7 @@ export default {
 
 <style >
 #Uni {
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   margin-left: 2%;
   margin-right: 2%;
