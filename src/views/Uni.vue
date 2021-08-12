@@ -1,6 +1,58 @@
 <template>
   <div class="card" id="Uni">
-    <h2 id="subject">E-portfolio : IT Project</h2>
+    <h2 id="subject">ZooMuteX : COMP90020</h2>
+    <p>
+      A p2p video conference webapp that uses the Suzuki Kasami’s Mutual
+      Exclusion algorithm as a way to prevent two or more people from talking
+      over one another.
+      <a href="https://zoomutex.herokuapp.com/" target="_blank">Check it out</a
+      >
+    </p>
+    <div class="p-grid p-jc-around">
+      <div class="p-col-2">
+        <a
+          href="https://github.com/Ishan27g/zoomutex"
+          target="_blank"
+          class="p-text-bold"
+          >Code repository</a
+        >
+      </div>
+      <div class="p-col-10 p-text-right">
+        <div style="width: auto" id="tech">
+          <Avatar
+            image="https://img.icons8.com/color/48/000000/typescript.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Typescript'"
+          />
+        </div>
+      </div>
+    </div>
+    <h2 id="subject">Wealth Distribution Model : SWEN90004</h2>
+    <p>
+      A Java replication & extension of the Wealth Distribution model from NetLogo to demonstrate Pareto's law.
+    </p>
+    <div class="p-grid p-jc-around">
+      <div class="p-col-2">
+        <a
+          href="https://github.com/Ishan27g/Wealth_Distribution"
+          target="_blank"
+          class="p-text-bold"
+          >Code repository</a
+        >
+      </div>
+      <div class="p-col-10 p-text-right">
+        <div style="width: auto" id="tech">
+          <Avatar
+            image="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Java'"
+          />
+        </div>
+      </div>
+    </div>
+    <h2 id="subject">E-portfolio : COMP30022</h2>
     <p>
       The E-portfolio allows students to create custom profiles to showcase
       their documents and achievements to potential employers.
@@ -93,7 +145,7 @@
       </div>
     </div>
 
-    <h2 id="subject">Masters Software Engineering Project</h2>
+    <h2 id="subject">Masters Software Engineering Project : SWEN90014</h2>
     <p>
       A mobile application that acts as a platform for public concesus of
       political processes by involving MP's with citizens.
@@ -201,36 +253,6 @@
         </div>
       </div>
     </div>
-
-    <h2 id="subject">WebCrawler : COMP30023</h2>
-    <p>A web crawler written according to custom specifications, in a hurry.</p>
-    <div class="p-grid p-jc-around">
-      <div class="p-col-2">
-        <a
-          href="https://github.com/Ishan27g/WebCrawler-in-C"
-          target="_blank"
-          class="p-text-bold"
-          >Code repository</a
-        >
-      </div>
-      <div class="p-col-10 p-text-right">
-        <div style="width: auto" id="tech">
-          <Avatar
-            image="https://img.icons8.com/color/96/000000/c-programming.png"
-            size="xlarge"
-            shape="circle"
-            v-tooltip.bottom="'C Programming'"
-          />
-          <Avatar
-            image="https://img.icons8.com/color/48/000000/gitlab.png"
-            size="xlarge"
-            shape="circle"
-            v-tooltip.bottom="'Gitlab'"
-          />
-        </div>
-      </div>
-    </div>
-
     <h2 id="subject">Distributed Dictionary Server : COMP90015</h2>
     <p>
       A simple server that can be queried by multiple concurrent clients to
@@ -263,63 +285,6 @@
         </div>
       </div>
     </div>
-
-    <h2 id="subject">Beauty saloon eCommerce website : SPM</h2>
-    <p>
-      A website that allows customers to book appointments, services and make
-      payments for various services offered by the saloon
-    </p>
-    <Galleria
-      :value="imagesSMP"
-      :responsiveOptions="responsiveOptions"
-      :numVisible="1"
-      containerStyle="max-width: 70%"
-      :circular="true"
-      :fullScreen="true"
-      :showItemNavigators="true"
-      :showThumbnails="false"
-      v-model:visible="displaySMP"
-    >
-      <template #item="slotProps">
-        <img
-          :src="slotProps.item.itemImageSrc"
-          style="width: 90%"
-          :alt="slotProps.item.alt"
-          class="zoom"
-        />
-      </template>
-      <template #thumbnail="slotProps">
-        <img
-          :src="slotProps.item.thumbnailImageSrc"
-          :alt="slotProps.item.alt"
-        />
-        {{ slotProps.item.thumbnailImageSrc }}
-      </template>
-      <template #footer>
-        <h1>Hover Mouse over Image</h1>
-      </template>
-    </Galleria>
-    <div class="p-grid p-jc-around">
-      <div class="p-col-2">
-        <Button
-          class="p-button-outlined p-button-rounded p-button-raised"
-          style="color: #ff9233"
-          label="Images"
-          icon="pi pi-images"
-          @click="displaySMP = true"
-        />
-      </div>
-      <div class="p-col-10 p-text-right">
-        <div style="width: auto" id="tech">
-          <Avatar
-            image="https://img.icons8.com/windows/100/4a90e2/wix.png"
-            size="xlarge"
-            shape="circle"
-            v-tooltip.bottom="'Wix'"
-          />
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -332,7 +297,6 @@ export default {
     return {
       imagesITP: null,
       imagesMAP: null,
-      imagesSMP: null,
       activeIndex: 0,
       visibleFull: false,
       displayCustom: false,
@@ -356,7 +320,6 @@ export default {
       ],
       displayITP: false,
       displayMAP: false,
-      displaySMP: false,
     };
   },
   galleriaService: null,
@@ -366,7 +329,6 @@ export default {
   mounted() {
     this.imagesITP = this.galleriaService.getImagesITP().data;
     this.imagesMAP = this.galleriaService.getImagesMAP().data;
-    this.imagesSMP = this.galleriaService.getImagesSMP().data;
   },
   methods: {
     imageClick(index) {
