@@ -28,7 +28,10 @@
             <p>
               I am a student at the University of Melbourne, pursuing a master's
               in software engineering. I am currently working as supervisor for
-              COMP30022 at Unimelb
+              <a href="https://handbook.unimelb.edu.au/subjects/comp30022"
+                target="_blank"
+                >COMP30022</a
+              > at Unimelb
             </p>
             <p>
               I enjoy web development, with particular expertise in backend
