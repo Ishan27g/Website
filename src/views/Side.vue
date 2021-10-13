@@ -33,6 +33,13 @@
           @click="active = 4"
           class="p-button-text p-button-rounded p-button-lg"
           style="color: #ff9233"
+          label="API Gateway"
+        />
+        
+        <Button
+          @click="active = 5"
+          class="p-button-text p-button-rounded p-button-lg"
+          style="color: #ff9233"
           label="Merkle Tree"
         />
         
@@ -192,6 +199,28 @@
                   size="xlarge"
                   shape="circle"
                   v-tooltip.bottom="'Css'"
+                />
+              </div>
+            </div>
+          </AccordionTab>
+          <AccordionTab header="Api Gateway">
+            <p>
+              A trivial implementation of an api gateway. Developed to test upstream services and get around
+              Nginx deployment during GitHub actions.
+            </p>
+            <a
+              href="https://github.com/Ishan27g/ApiGw"
+              target="_blank"
+              class="p-text-bold"
+              >Code repository</a
+            >
+            <div class="p-grid p-jc-center">
+              <div class="p-col-2">
+                <Avatar
+                  image="https://img.icons8.com/color/48/000000/golang.png"
+                  size="xlarge"
+                  shape="circle"
+                  v-tooltip.bottom="'Golang'"
                 />
               </div>
             </div>

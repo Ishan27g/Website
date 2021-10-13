@@ -144,7 +144,6 @@
         </div>
       </div>
     </div>
-
     <h2 id="subject">Masters Software Engineering Project : SWEN90014</h2>
     <p>
       A mobile application that acts as a platform for public concesus of
@@ -253,6 +252,39 @@
         </div>
       </div>
     </div>
+    <h2 id="subject">Data Normalization Software Requirements : SWEN90009</h2>
+    <p>
+    A software requirements analysis project for Telstra about possible routes towards creating
+    an automated or semi-automated normalization process that will allow logs from varied systems
+    and devices to be quickly normalized and prepared for export to a range of analytics platforms,
+    with the aim of saving manual processing time and reducing error rates. 
+    </p>
+    <div class="p-grid p-jc-around">
+      <div class="p-col-2">
+        <a
+          href="https://github.com/Ishan27g/SWEN90009_2021_DN-Koala"
+          target="_blank"
+          class="p-text-bold"
+          >Code repository</a
+        >
+      </div>
+      <div class="p-col-10 p-text-right">
+        <div style="width: auto" id="tech">
+          <Avatar
+            image="https://img.icons8.com/color/48/000000/figma--v1.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Figma'"
+          />
+          <Avatar
+            image="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/000000/external-agile-web-design-and-development-flatarticons-blue-flatarticons.png"
+            size="xlarge"
+            shape="circle"
+            v-tooltip.bottom="'Agile'"
+          />
+        </div>
+      </div>
+    </div>
     <h2 id="subject">Distributed Dictionary Server : COMP90015</h2>
     <p>
       A simple server that can be queried by multiple concurrent clients to
@@ -285,6 +317,8 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </template>
 

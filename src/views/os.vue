@@ -14,11 +14,15 @@
           <ul>
             <li>
               Added shipyard log command that allows the ability to tail
-              shipyard resource logs, similar to docker-compose
-            </li>
-            <li>Added a few core debug fixes</li>
-            <li>
+              shipyard resource logs, similar to docker-compose, along with a few 
+              core debug fixes
               <a href="https://github.com/shipyard-run/shipyard/pull/134"
+                target="_blank"
+                >PR on Github</a
+              >
+              </li>
+            <li>Added shell completion
+              <a href="https://github.com/shipyard-run/shipyard/pull/137"
                 target="_blank"
                 >PR on Github</a
               >
@@ -62,8 +66,8 @@
             >Website</a
           >
           <ul>
-            <li>Contributed towards backend development & deployment</li>
-            <li>
+            <li>Contributed towards backend development & deployment and subsetquent post-handover 
+              simplification.
               <a
                 href="https://github.com/RightToAskOrg/righttoask-docs"
                 target="_blank"
