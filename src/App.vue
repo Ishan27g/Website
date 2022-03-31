@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import Bg from "./components/Bg";
+// import Bg from "./components/Bg";
 export default {
   name: "App",
   data() {
@@ -72,9 +72,9 @@ export default {
       email: false,
     };
   },
-  components: {
-    Bg,
-  },
+  // components: {
+  //   Bg,
+  // },
   methods: {
     showEmail() {
       this.email = true;
