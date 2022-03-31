@@ -2,9 +2,13 @@
   <div>
  
     <h1 class="p-text-center">Open Source Contributions</h1>
-            <DataTable  :value="this.filtered.reverse()" dataKey="updated_at" class="p-datatable-sm" 
+            <DataTable  :value="this.filtered" dataKey="updated_at" class="p-datatable-sm" 
               responsiveLayout="scroll" scrollable scrollHeight="500px">
-                <Column field="name" header="Name" :sortable="true"></Column>
+                <Column field="name" header="Name" :sortable="true">
+                <template #body="slotProps">
+                     <h4 id="heading">{{slotProps.data.name}}</h4>
+                  </template>
+                </Column>
                 <Column field="description" header="Description"></Column>
                 <Column field="updated_at" header="Updated" :sortable="true"></Column>
                 <Column class="p-grid p-jc-center" field="language" header="Languages" :sortable="true">
@@ -264,11 +268,21 @@ export default {
               if (value.name == 'Wealth_Distribution'){
                 value.language = 'java'
               }
-              value.updated_at = dayjs(value.pushed_at).format('YYYY MMMM');
-              filtered.value.push(value) 
+              value.updated_at = dayjs(value.pushed_at).format('YYYY MMMM D');
+              filtered.value.push(value)
             }
           })
-        })
+          // sort by last push
+          filtered.value = filtered.value.sort(function(x, y) {
+                  if (dayjs(x.pushed_at).isBefore(dayjs(y.updated_at))) {
+                    return -1;
+                  }
+                  if (dayjs(y.pushed_at).isBefore(dayjs(x.updated_at))) {
+                    return 1;
+                  }
+                  return 0;
+                }).reverse()
+          })
       })
 
       return{
