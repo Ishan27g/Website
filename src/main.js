@@ -12,12 +12,18 @@ import AvatarGroup from 'primevue/avatargroup';
 import Tooltip from 'primevue/tooltip';
 import Dialog from 'primevue/dialog';
 import Timeline from 'primevue/timeline';
-import Particles from "particles.vue3";
+//import Particles from "particles.vue3";
 import Fieldset from 'primevue/fieldset';
 import Galleria from 'primevue/galleria';
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 import ToggleButton from 'primevue/togglebutton';
+
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import Toast from 'primevue/toast';
+import ToastService from 'primevue/toastservice';
+import ScrollPanel from 'primevue/scrollpanel';
 
 
 import 'animate.css'
@@ -32,7 +38,8 @@ const app = createApp(App);
 
 app.use(Router)
 app.use(PrimeVue), {ripple: true}
-app.use(Particles)
+app.use(ToastService)
+// app.use(Particles)
 
 app.component('Button', Button)
 app.component('Card', Card)
@@ -46,7 +53,10 @@ app.component('Galleria', Galleria)
 app.component('Accordion', Accordion)
 app.component('AccordionTab', AccordionTab)
 app.component('ToggleButton', ToggleButton)
-
+app.component('DataTable', DataTable)
+app.component('Column', Column)
+app.component('Toast',Toast)
+app.component('ScrollPanel',ScrollPanel)
 
 app.directive('tooltip', Tooltip)
 
