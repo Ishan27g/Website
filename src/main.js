@@ -24,7 +24,6 @@ import Column from 'primevue/column';
 import Toast from 'primevue/toast';
 import ToastService from 'primevue/toastservice';
 import ScrollPanel from 'primevue/scrollpanel';
-import Tree from 'primevue/tree';
 
 
 import 'animate.css'
@@ -58,7 +57,6 @@ app.component('DataTable', DataTable)
 app.component('Column', Column)
 app.component('Toast',Toast)
 app.component('ScrollPanel',ScrollPanel)
-app.component('Tree',Tree)
 
 app.directive('tooltip', Tooltip)
 
