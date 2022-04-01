@@ -1,6 +1,45 @@
 <template>
   <div>
     <h1 class="p-text-center">Open Source Contributions</h1>
+      <div class="p-d-flex p-flex-column">
+        <div class="p-grid p-jc-between p-col-12">
+          <div class="p-text-center" v-for="user in this.filtered" :key="user.name">
+            <Card style="margin: 2em">
+                  <template #title>{{user.name}}</template>
+                  <template #content class="p-text-wrap" style="word-wrap: break-word;" }}> <p >{{user.description}}</p>
+                    <div>
+                      <i class="pi pi-star" style="margin-right: 0.5em"></i>{{user.stargazers_count}}
+                    </div>
+                    <div>
+                      <div style="width: auto" id="tech" v-if="user.language">
+                        <Avatar
+                          :image="`https://img.icons8.com/color/48/000000/${user.language}.png`"
+                          size="large"
+                          shape="circle"
+                          v-tooltip.bottom="`${user.language}`"
+                        />
+                    </div>
+                    </div>
+                    <div style="margin-top: 10px"><a :href="`${user.html_url}`" target="_blank">
+                        <Avatar
+                          image="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                          size="small"
+                          shape="circle"
+                          v-tooltip.bottom="'Open In Github'"
+                        />
+                      </a></div>
+                  </template>
+                  <template #footer>
+                    <div v-for="topic in user.topics" :key="topic">
+                        {{topic}}
+                      </div>
+                  
+                  </template>
+              </Card>
+        </div>
+      </div>
+    </div>
+    
     <div class="p-d-flex p-flex-column" id="experience">
       <div class="p-grid p-jc-between">
         <div class="p-text-left p-col-8">
@@ -113,6 +152,7 @@
 </template>
 
 <script>
+
 export default {
   name: "Work",
   data() {

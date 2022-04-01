@@ -3,262 +3,113 @@
     <div class="p-col-12">
       <h2>Side Projects</h2>
     </div>
-    <div class="p-col-12 p-lg-10">
-      <div class="p-pb-5 p-text-center" id="tabs">
-         <Button
-          @click="active = 0"
-          class="p-button-text p-button-rounded p-button-lg"
-          style="color: #ff9233"
-          label="Search & Upload Engine"
-        />
-        <Button
-          @click="active = 1"
-          class="p-button-text p-button-rounded p-button-lg"
-          style="color: #ff9233"
-          label="MeowMeowBeenz"
-        />
-        <Button
-          @click="active = 2"
-          class="p-button-text p-button-rounded p-button-lg"
-          style="color: #ff9233"
-          label="Finstagram"
-        />
-        <Button
-          @click="active = 3"
-          class="p-button-text p-button-rounded p-button-lg"
-          style="color: #ff9233"
-          label="Portfolio Website"
-        />
-        <Button
-          @click="active = 4"
-          class="p-button-text p-button-rounded p-button-lg"
-          style="color: #ff9233"
-          label="API Gateway"
-        />
-        
-        <Button
-          @click="active = 5"
-          class="p-button-text p-button-rounded p-button-lg"
-          style="color: #ff9233"
-          label="Merkle Tree"
-        />
-        
-      </div>
-    </div>
-    <div class="p-col-12 p-md-10 p-lg-10">
-      <div id="Side" class="p-grid p-jc-center">
-        <Accordion v-model:activeIndex="active">
-          <AccordionTab header="Search & Upload Engine">
-            <p>
-              A distributed file server based on the RAFT algorithm. 
-              Content of the uploaded files is mapped and stored in the form of an avl 
-              tree distributed amongst the peers, assuring efficient lookup & updates. 
-              The system is eventually consistent in the event of network partitions.
-            </p>
-            <a
-              href="https://github.com/Ishan27g/file-index-lookup-engine"
-              target="_blank"
-              class="p-text-bold"
-              >Code repository</a
-            >
-            <div class="p-grid p-jc-center">
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/golang.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Golang'"
-                />
-              </div>
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/dusk/128/000000/docker.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Docker'"
-                />
-              </div>
-            </div>
-          </AccordionTab>
-          <AccordionTab header="MeowMeowBeenz">
-            <p>
-              MeowMeowBeenz app from the tv show "Community", 
-              season 5 episode - 
-              <a href="https://community-sitcom.fandom.com/wiki/MeowMeowBeenz"
-                target="_blank"
-                >App Development and Condiments</a
-              >.
-              I wrote this out of interest, to learn Kotlin
-            </p>
-            <a
-              href="https://github.com/Ishan27g/mmbeenz-App"
-              target="_blank"
-              class="p-text-bold"
-              >Code repository</a
-            >
-            <div class="p-grid p-jc-center">
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/kotlin.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Kotlin'"
-                />
-              </div>
-            </div>
-          </AccordionTab>
-           <AccordionTab header="Finstagram">
-            <p>
-              A full stack minimal Instagram clone: 
-              <ul>
-                <li>
-                  Frontend / User-interface written in Vue.js 
-                </li>
-                <li>
-                  Backend / Server written in Golang 
-                </li>
-              </ul>
-              The app allows registration, login as well as CRUD capabilities. 
-              Quasar framework is used for the frontend components. 
-              Fiber framework is used on the backend. 
-              The server connects to a MongoDB atlas cloud database.
-            </p>
-            WIP : Deployment
-            <ul>
-              <li>Frontend (Vue.js) -> deploy to Netlify.</li>
-              <li>Server (Golang) deploy to Heroku.</li>
-            </ul>
-            <div class="p-grid">
-              <div class="p-col-3">
-              <a
-                href="https://github.com/Ishan27g/finstagram"
-                target="_blank"
-                class="p-text-bold"
-                >Code repository</a
-              >
-            </div>
-            <div class="p-col-3">
-             <a
-              href="https://ishan27g.github.io/finstagram/"
-              target="_blank"
-              class="p-text-bold"
-              >Website</a
-              >
-              </div>
-            </div>
-            <div class="p-grid p-jc-center">
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/golang.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Golang'"
-                />
-              </div>
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/vue-js.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Vue.js'"
-                />
-              </div>
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/dusk/48/000000/css3.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Css'"
-                />
-              </div>
-            </div>
-          </AccordionTab>
-          <AccordionTab header="Portfolio Website">
-            <p>
-              This website, written in Vue.js. PrimeVue library is used for
-              various components. Website is deployed to Netlify.
-            </p>
-            <a
-              href="https://github.com/Ishan27g/Website"
-              target="_blank"
-              class="p-text-bold"
-              >Code repository</a
-            >
-            <div class="p-grid p-jc-center">
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/vue-js.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Vue.js'"
-                />
-              </div>
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/dusk/48/000000/css3.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Css'"
-                />
-              </div>
-            </div>
-          </AccordionTab>
-          <AccordionTab header="Api Gateway">
-            <p>
-              A trivial implementation of an api gateway. Developed to test upstream services and get around
-              Nginx deployment during GitHub actions.
-            </p>
-            <a
-              href="https://github.com/Ishan27g/ApiGw"
-              target="_blank"
-              class="p-text-bold"
-              >Code repository</a
-            >
-            <div class="p-grid p-jc-center">
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/golang.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Golang'"
-                />
-              </div>
-            </div>
-          </AccordionTab>
-          <AccordionTab header="Merkle Tree">
-            <p>
-              A simple implementation of Merkle tree in Go.
-            </p>
-            <a
-              href="https://github.com/Ishan27g/merkle"
-              target="_blank"
-              class="p-text-bold"
-              >Code repository</a
-            >
-            <div class="p-grid p-jc-center">
-              <div class="p-col-2">
-                <Avatar
-                  image="https://img.icons8.com/color/48/000000/golang.png"
-                  size="xlarge"
-                  shape="circle"
-                  v-tooltip.bottom="'Golang'"
-                />
-              </div>
-            </div>
-          </AccordionTab>
-        </Accordion>
-      </div>
-    </div>
+     <DataTable :value="this.repositories" dataKey="updated_at" class="p-datatable-sm" 
+              responsiveLayout="scroll" scrollable scrollHeight="500px">
+                <Column field="name" header="Name" :sortable="true">
+                <template #body="slotProps">
+                     <h4 id="heading">{{slotProps.data.name}}</h4>
+                  </template>
+                </Column>
+                <Column field="description" header="Description"></Column>
+                <Column field="updated_at" header="Updated" :sortable="true"></Column>
+                <Column class="p-grid p-jc-center" field="language" header="Languages" :sortable="true">
+                  <template #body="slotProps">
+                    <div style="width: auto"  class="p-grid p-jc-left" v-if="slotProps.data.language">
+                        <Avatar
+                          :image="`https://img.icons8.com/color/48/000000/${slotProps.data.language}.png`"
+                          size="small"
+                          shape="circle"
+                          v-tooltip.bottom="`${slotProps.data.language}`"
+                        />
+                    </div>
+                  </template>
+                </Column>
+                <Column field="url" header="Repository">
+                <template #body="slotProps">
+                   <div style="margin-top: 10px"><a :href="`${slotProps.data.html_url}`" target="_blank">
+                        <Avatar
+                          image="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                          size="small"
+                          shape="circle"
+                          v-tooltip.bottom="'Open In Github'"
+                        />
+                      </a></div>
+                </template>
+                </Column>
+          </DataTable>
   </div>
 </template>
 
 <script>
+
+import { ref, onMounted } from "vue";
+import dayjs from 'dayjs';
+import axios from 'axios'
+
 export default {
   name: "Side",
   data() {
     return {
       active: 0,
     };
+  },
+  setup(){
+      var filters = ['go-learn', 'go-utils', 'gobyexample', 'ishan27g', 'micro',
+       'registry', 'services', 'utils', 'shipyard-aws', 'shipyard', 'zinc']
+
+      let gitInfo = ref([""]);
+      let repositories = ref([]);
+
+      onMounted(async () => {
+         await axios
+          .get('https://api.github.com/users/Ishan27g/repos')
+          .then(response => {
+            gitInfo.value = response.data
+            gitInfo.value.forEach((value) => {
+              if (!filters.find((v) => v==value.name) ){
+                if (value.language == 'Go'){
+                  value.language = 'golang'
+                }
+                if (value.language == 'Java'){
+                  value.language = 'java'
+                }
+                if (value.language == 'Kotlin'){
+                  value.language = 'kotlin'
+                }
+                if (value.language == 'Vue'){
+                  value.language = 'vue-js'
+                }
+                if (value.language == 'JavaScript'){
+                  value.language = 'javascript'
+                }
+                if (value.language == 'TypeScript'){
+                  value.language = 'typescript'
+                }
+                if (value.language == 'C'){
+                  value.language = 'c'
+                }
+                if (value.name == 'Wealth_Distribution'){
+                  value.language = 'java'
+                }
+                value.updated_at = dayjs(value.pushed_at).format('YYYY MMMM D');
+                repositories.value.push(value)
+              }
+            })
+            // sort by last push
+            repositories.value = repositories.value.sort(function(x, y) {
+                    if (dayjs(x.pushed_at).isBefore(dayjs(y.updated_at))) {
+                      return -1;
+                    }
+                    if (dayjs(y.pushed_at).isBefore(dayjs(x.updated_at))) {
+                      return 1;
+                    }
+                    return 0;
+            }).reverse()
+          })
+      });
+      return{
+        repositories,
+      }
   },
 };
 </script>

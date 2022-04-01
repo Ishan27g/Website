@@ -14,7 +14,7 @@
             border-radius: 50%;
             width: 20%;
             display: block;
-            margin-top: 15px;
+            margin-top: 5px;
             margin-left: auto;
             margin-right: auto;
           "
@@ -26,20 +26,18 @@
         <div class="p-text-center p-text-light">
           <span>
             <p>
-              I am a student at the University of Melbourne, pursuing a master's
-              in software engineering. I am currently working as supervisor for
-              <a href="https://handbook.unimelb.edu.au/subjects/comp30022"
-                target="_blank"
-                >COMP30022</a
-              > at Unimelb
-            </p>
-            <p>
-              I enjoy web development, with particular expertise in backend
+              I am a student at the University of Melbourne, in my final semester of a Master's
+              in software engineering.
+              I enjoy software development, with particular expertise in backend
               technologies.
             </p>
+              <p>
+              As a clueless undergraduate in 2016, I was fortunate to start at <a href="https://hsc.com/" target="_blank">Hughes Systique</a>
+              and gain invaluable insights about software development & technology. 3 years later, it led me to pursue a Masters in Software engineering at UniMelb.
+              </p>
             <p>
-              I have just under 3 years of professional experience in developing
-              software solutions in the wireless communication domain.
+            I have recently completed a full stack internship at <a href="https://linkmate.com.au/" target="_blank">LinkMate</a> as a part of my course,
+            prior to which I was a supervisor for the capstone undergraduate <a href="https://handbook.unimelb.edu.au/subjects/comp30022" target="_blank">IT project</a> at the University of Melbourne. 
             </p>
           </span>
         </div>
@@ -203,11 +201,10 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 #ishan {
   position: relative;
-  margin-top: 10px;
   font-size: 46px;
 }
 #bioInfo {
-  margin-top: 35px;
+  margin-top: 5px;
   margin-left: 2%;
   margin-right: 2%;
   font-size: 22px;
